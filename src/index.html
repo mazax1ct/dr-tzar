@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>DIGITAL RAZOR ЦАРЬ-КОНФИГУРАТОР 2021</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="config">
+        //= template/sprite.html
+
+        <p class="config__title">Выбери конфигурацию</p>
+
+        <div class="params">
+            <p class="js-params-toggler config__subtitle">
+                <span class="config__subtitle-num">1</span>
+                <span class="config__subtitle-container">настрой параметры конфигурации
+                    <span class="config__subtitle-button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#arrow_down" />
+                        </svg>
+                    </span>
+                </span></p>
+            <div class="params__inner">
+                <div class="params__block">
+                    <p class="params__block-title">
+                        <span class="info">
+                            <button class="info__button" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#info" />
+                                </svg>
+                            </button>
+                            <span class="info__popover">
+                                <span><span></span></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
+                                similique esse odit.
+                            </span>
+                        </span>
+                        разрешение монитора
+                    </p>
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="res" value="1">
+                            <span class="btns-group__item-inner">FHD</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="res" value="2">
+                            <span class="btns-group__item-inner">2K</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="res" value="3">
+                            <span class="btns-group__item-inner">4K</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="params__block">
+                    <p class="params__block-title">
+                        <span class="info">
+                            <button class="info__button" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#info" />
+                                </svg>
+                            </button>
+                            <span class="info__popover">
+                                <span><span></span></span>
+                                Вы можете выбрать уровень настроек графики для игр, на которых обычно играете. Они влияют на детализацию изображения в игре и уровень FPS. Для требовательных игр на младших конфигурациях снижение настроек позволит
+                                получить более плавную картинку.
+                            </span>
+                        </span>
+                        настройки графики
+                    </p>
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="graphics" value="1">
+                            <span class="btns-group__item-inner">Standart</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="graphics" value="2">
+                            <span class="btns-group__item-inner">High</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="graphics" value="3">
+                            <span class="btns-group__item-inner">Ultra</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="params__block">
+                    <p class="params__block-title">
+                        <span class="info">
+                            <button class="info__button" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#info" />
+                                </svg>
+                            </button>
+                            <span class="info__popover">
+                                <span><span></span></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quo a quis possimus, neque magni. Quaerat dolorum beatae facere hic, in a nam laudantium et earum, voluptatibus, possimus facilis ex!
+                            </span>
+                        </span>
+                        дополнительные задачи
+                    </p>
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="add" value="1">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">3D</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="add" value="2">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">Видеомонтаж</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="add" value="3">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">Стриминг</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="games">
+            <p class="config__subtitle"><span class="config__subtitle-num">2</span> выбери 5 игр</p>
+            <div class="games__filter-block">
+                <button class="games__filter-togler" type="button">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#filter" />
+                    </svg>
+                    Фильтр игр
+                </button>
+                <div class="games__filter"></div>
+            </div>
+
+            <div class="games__slider-block">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_1.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_2.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_3.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_4.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_5.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_1.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_2.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_3.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_4.jpg" alt="Название игры"></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="games__game" type="button"><img src="images/content/game_5.jpg" alt="Название игры"></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="swiper-button-prev" type="button" title="Назад">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#arrow_left" />
+                    </svg>
+                </button>
+                <button class="swiper-button-next" type="button" title="Вперёд">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#arrow_right" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="games__games-block">
+                <p class="games__games-block-title">Твои игры</p>
+                <div class="games__list">
+                    <div class="games__list-item">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="games__list-item">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="games__list-item">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="games__list-item">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="games__list-item">
+                        <button class="games__picked-game" type="button"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="config__subtitle"><span class="config__subtitle-num">3</span> выбери моды</p>
+
+        <div class="mods"></div>
+
+        <div class="cards">
+
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 4,
+        spaceBetween: 4,
+        breakpoints: {
+            768: {
+                slidesPerView: 6,
+                spaceBetween: 0
+            },
+            1200: {
+                slidesPerView: 9,
+                spaceBetween: 4
+            },
+            1900: {
+                slidesPerView: 9,
+                spaceBetween: 8
+            },
+            2500: {
+                slidesPerView: 9,
+                spaceBetween: 16
+            }
+        }
+    });
+</script>
+
+</html>

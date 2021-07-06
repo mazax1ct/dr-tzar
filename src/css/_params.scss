@@ -1,0 +1,114 @@
+.params {
+    box-shadow: 0 1px 8px 0 rgba($main_color, 0.5);
+    border-radius: 4px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 536px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    @media(min-width: $sm) {
+        box-shadow: none;
+        margin-bottom: 40px;
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 48px;
+    }
+    @media(min-width: $ufhd) {
+        margin-bottom: 56px;
+    }
+
+    .config__subtitle {
+        margin-bottom: 0;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__inner {
+        display: none;
+        padding-top: 32px;
+        @media(min-width: $sm) {
+            background-color: #020405;
+            box-shadow: 0 0 24px 0 rgba($main_color, 0.5);
+            display: block !important;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 536px;
+            padding-top: 24px;
+            padding-bottom: 32px;
+        }
+        @media(min-width: $hd) {
+            border-radius: 4px;
+            box-shadow: 0 0 12px 0 $main_color;
+            display: flex !important;
+            justify-content: center;
+            max-width: 1216px;
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+        @media(min-width: $fhd) {
+            max-width: 1760px;
+        }
+        @media(min-width: $ufhd) {
+            max-width: 2080px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__block {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $hd) {
+                margin-bottom: 0;
+                margin-right: 24px;
+            }
+            @media(min-width: $fhd) {
+                margin-right: 36px;
+            }
+        }
+
+        &:not(:first-child) {
+            @media(min-width: $hd) {
+                margin-left: 24px;
+            }
+            @media(min-width: $fhd) {
+                margin-left: 36px;
+            }
+        }
+    }
+
+    &__block-title {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: center;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        @media(min-width: $sm) {
+            font-size: 18px;
+            line-height: 1.44444;
+            margin-bottom: 16px;
+        }
+        @media(min-width: $hd) {
+            justify-content: flex-start;
+        }
+
+        .info {
+            margin-right: 8px;
+            @media(min-width: $sm) {
+                margin-right: 16px;
+            }
+        }
+    }
+}

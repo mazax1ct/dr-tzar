@@ -1,0 +1,171 @@
+.btns-group {
+    border-radius: 4px;
+    background-color: rgba($main_color, 0.3);
+    display: inline-flex;
+    min-width: 304px;
+    padding: 4px;
+    @media(min-width: $sm) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    @media(min-width: $fhd) {
+        min-width: 408px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    &__item {
+        flex-grow: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+        position: relative;
+        @media(min-width: $sm) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        input {
+            position: absolute;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            width: 1px;
+
+            &:checked + .btns-group__item-inner {
+                background-color: $main_color;
+            }
+        }
+    }
+
+    &__item-inner {
+        align-items: center;
+        border-radius: 2px;
+        border: 2px solid $main_color;
+        background-color: rgba($main_color, 0.7);
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 1.25;
+        min-height: 40px;
+        padding: 8px 16px;
+        position: relative;
+        text-align: center;
+        transition: background-color 0.3s;
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            line-height: 1.33333;
+            min-height: 56px;
+            min-width: 100px;
+            padding-left: 26px;
+            padding-right: 26px;
+        }
+
+        &--small {
+            font-size: 12px;
+            @media(min-width: $sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.radio {
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+
+    &__input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+
+        &:checked + .radio__radio {
+            background-color: $main_color;
+            border-color: $main_color;
+        }
+
+        &:checked + .radio__radio::after {
+            background-color: #fff;
+        }
+    }
+
+    &__radio {
+        background-color: #292929;
+        border-radius: 50%;
+        border: 1px solid #474747;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 20px;
+
+        &::after {
+            background-color: transparent;
+            border-radius: 50%;
+            content: '';
+            height: 8px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: background-color 0.3s;
+            width: 8px;
+        }
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 34px;
+
+    &__input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+
+        &:checked + .checkbox__icon {
+            background-color: $main_color;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M1 5L4.33333 8.5L11 1.5' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border-color: $main_color;
+        }
+    }
+
+    &__icon {
+        border: 1px solid #474747;
+        background-color: #292929;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        height: 20px;
+        line-height: 18px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 20px;
+    }
+}

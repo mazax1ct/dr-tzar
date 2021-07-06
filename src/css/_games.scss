@@ -1,0 +1,399 @@
+.games {
+    margin-bottom: 32px;
+    margin-left: -16px;
+    margin-right: -16px;
+    position: relative;
+    @media(min-width: $sm) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        max-width: 672px;
+    }
+    @media(min-width: $hd) {
+        max-width: 1216px;
+    }
+    @media(min-width: $fhd) {
+        max-width: 1760px;
+        margin-bottom: 48px;
+    }
+    @media(min-width: $ufhd) {
+        max-width: 2080px;
+        margin-bottom: 56px;
+    }
+
+    .config__title {
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__filter-block {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+        @media(min-width: $hd) {
+            left: auto;
+            margin-bottom: 0;
+            position: absolute;
+            right: 0;
+            top: 8px;
+            z-index: 1;
+        }
+        @media(min-width: $fhd) {
+            top: 0;
+        }
+    }
+
+    &__filter-togler {
+        align-items: center;
+        border: 2px solid $main_color;
+        background-color: rgba($main_color, 0.7);
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 48px;
+        padding: 12px 30px;
+        transition: background-color 0.3s;
+        @media(min-width: $hd) {
+            font-size: 12px;
+            min-height: 32px;
+            padding: 6px 26px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            min-height: 48px;
+            padding: 12px 30px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            min-height: 56px;
+            padding: 16px 40px;
+        }
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: $main_color;
+        }
+
+        svg {
+            fill: #fff;
+            height: 20px;
+            margin-right: 8px;
+            width: 20px;
+            @media(min-width: $hd) {
+                height: 16px;
+                margin-right: 4px;
+                width: 16px;
+            }
+        }
+    }
+
+    &__filter {}
+
+    &__slider-block {
+        box-shadow: 0 1px 8px 0 rgba($main_color, 0.5);
+        background-color: #020405;
+        padding: 20px 34px;
+        position: relative;
+        @media(min-width: $sm) {
+            box-shadow: 0 0 24px 0 rgba($main_color, 0.5);
+            border-radius: 4px;
+            padding: 22px 28px;
+        }
+        @media(min-width: $hd) {
+            padding: 28px 56px;
+        }
+        @media(min-width: $fhd) {
+            padding: 32px 24px;
+        }
+        @media(min-width: $ufhd) {
+            padding: 42px 80px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            height: 34px;
+            justify-content: center;
+            margin-top: 0;
+            padding: 0;
+            transform: translateY(-50%);
+            width: 34px;
+            @media(min-width: $sm) {
+                background-color: #0C1117;
+                border-radius: 50%;
+                box-shadow: 0 0 16px 0 rgba($main_color, 0.5);
+                height: 40px;
+                width: 40px;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            svg {
+                fill: #fff;
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 0;
+            @media(min-width: $sm) {
+                left: -24px;
+            }
+            @media(min-width: $hd) {
+                left: 10px;
+            }
+            @media(min-width: 1280px) {
+                left: -20px;
+            }
+        }
+
+        .swiper-button-next {
+            right: 0;
+            @media(min-width: $sm) {
+                right: -24px;
+            }
+            @media(min-width: $hd) {
+                right: 10px;
+            }
+            @media(min-width: 1280px) {
+                right: -20px;
+            }
+        }
+    }
+
+    &__game {
+        background-color: transparent;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 4px;
+        position: relative;
+        @media(min-width: $sm) {
+            border-radius: 4px;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+
+            img {
+                box-shadow: 0 0 4px 0 $main_color;
+            }
+        }
+
+        &::after {
+            bottom: 4px;
+            border-radius: 4px;
+            border: 4px solid $main_color;
+            content: '';
+            left: 4px;
+            opacity: 0;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            transition: opacity 0.3s;
+            z-index: 1;
+        }
+
+        img {
+            box-shadow: 0 0 4px 0 rgba(#fff, 0.5);
+            border-radius: 2px;
+            display: block;
+            transition: box-shadow 0.3s;
+            width: 100%;
+            @media(min-width: $sm) {
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__games-block {
+        background-color: #020405;
+        box-shadow: 0 1px 8px 0 rgba($main_color, 0.5);
+        border-radius: 0 0 16px 16px;
+        max-width: 276px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 14px 24px;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            box-shadow: 0 4px 9px 0 rgba($main_color, 0.5);
+            max-width: 438px;
+            padding: 0 16px 16px;
+        }
+        @media(min-width: $hd) {
+            max-width: 402px;
+            padding: 8px 20px 14px;
+        }
+        @media(min-width: $fhd) {
+            max-width: 608px;
+            padding: 12px 32px;
+        }
+        @media(min-width: $ufhd) {
+            max-width: 632px;
+            padding: 24px;
+        }
+
+        &::before {
+            background-color: #020405;
+            content: '';
+            height: 16px;
+            left: 0;
+            position: absolute;
+            top: -8px;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    &__games-block-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.33333;
+        margin-bottom: 16px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @media(min-width: $sm) {
+            margin-bottom: 8px;
+        }
+        @media(min-width: $hd) {
+            font-size: 16px;
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            line-height: 1.33333;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-left: -6px;
+        margin-right: -6px;
+        @media(min-width: $hd) {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        @media(min-width: $fhd) {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+
+    &__list-item {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 20%;
+        @media(min-width: $hd) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        @media(min-width: $fhd) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    &__picked-game {
+        background-color: rgba($main_color, 0.5);
+        border-radius: 2px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 100% auto;
+        box-shadow: 0 0 12px 0 $main_color;
+        display: block;
+        height: 0;
+        padding: 0 0 100%;
+        position: relative;
+        width: 100%;
+        @media(min-width: $sm) {
+            border-radius: 4px;
+        }
+
+        &::after {
+            border-radius: 2px;
+            border: 2px solid rgba($main_color, 0.5);
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            @media(min-width: $sm) {
+                border-radius: 4px;
+            }
+        }
+
+        &:focus,
+        &:hover {
+            svg {
+                opacity: 1;
+            }
+        }
+
+        svg {
+            fill: #fff;
+            height: 20px;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transition: opacity 0.3s;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            z-index: 2;
+            @media(max-width: 1199px) {
+                opacity: 1;
+            }
+            @media(min-width: $sm) {
+                height: 34px;
+                width: 34px;
+            }
+            @media(min-width: $hd) {
+                height: 32px;
+                width: 32px;
+            }
+            @media(min-width: $fhd) {
+                height: 46px;
+                width: 46px;
+            }
+            @media(min-width: $ufhd) {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        &.is-picked {
+            cursor: pointer;
+
+            &::after {
+                border-color: $main_color;
+            }
+        }
+    }
+}
