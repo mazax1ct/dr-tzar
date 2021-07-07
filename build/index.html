@@ -59,13 +59,15 @@
         <div class="params">
             <p class="js-params-toggler config__subtitle">
                 <span class="config__subtitle-num">1</span>
-                <span class="config__subtitle-container">настрой параметры конфигурации
+                <span class="config__subtitle-container">
+                    настрой параметры конфигурации
                     <span class="config__subtitle-button">
                         <svg aria-hidden="true">
                             <use xlink:href="#arrow_down" />
                         </svg>
                     </span>
-                </span></p>
+                </span>
+            </p>
             <div class="params__inner">
                 <div class="params__block">
                     <p class="params__block-title">
@@ -165,13 +167,119 @@
         <div class="games">
             <p class="config__subtitle"><span class="config__subtitle-num">2</span> выбери 5 игр</p>
             <div class="games__filter-block">
-                <button class="games__filter-togler" type="button">
+                <button class="js-filter-opener games__filter-togler" type="button">
                     <svg aria-hidden="true">
                         <use xlink:href="#filter" />
                     </svg>
                     Фильтр игр
                 </button>
-                <div class="games__filter"></div>
+                <div class="games__filter filter">
+                    <button class="js-filter-closer filter__close" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#close" />
+                        </svg>
+                    </button>
+                    <div class="filter__inner">
+                        <div class="filter__block">
+                            <p class="filter__title">жанры</p>
+                            <div class="filter__checkboxes">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Стратегия
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    РПГ
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Экшен
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Ужасы
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Инди
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Аркада
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Шутер
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Симулятор
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__icon"></span>
+                                    Файтинг
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter__block">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                60+ FPS в играх
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                НОВИНКИ
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                игры с FSR
+                                <span class="info">
+                                    <button class="info__button" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#info" />
+                                        </svg>
+                                    </button>
+                                    <span class="info__popover">
+                                        <span><span></span></span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
+                                        repellat
+                                        similique esse odit.
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                игры с DLSS
+                                <span class="info">
+                                    <button class="info__button" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#info" />
+                                        </svg>
+                                    </button>
+                                    <span class="info__popover">
+                                        <span><span></span></span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
+                                        repellat
+                                        similique esse odit.
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="games__slider-block">
@@ -225,44 +333,201 @@
                 <p class="games__games-block-title">Твои игры</p>
                 <div class="games__list">
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
                         </button>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
                         </button>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
                         </button>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')">
+                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
                         </button>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game" type="button"></button>
+                        <div class="games__picked-game"></div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <p class="config__subtitle"><span class="config__subtitle-num">3</span> выбери моды</p>
-
-        <div class="mods"></div>
+        <div class="mods">
+            <p class="js-mods-toggler config__subtitle">
+                <span class="config__subtitle-num">3</span>
+                <span class="config__subtitle-container">
+                    выбери моды
+                    <span class="config__subtitle-button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#arrow_down" />
+                        </svg>
+                    </span>
+                </span>
+            </p>
+            <div class="mods__inner">
+                <div class="mods__block">
+                    <p class="mods__block-title">
+                        <span class="info">
+                            <button class="info__button" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#info" />
+                                </svg>
+                            </button>
+                            <span class="info__popover">
+                                <span><span></span></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
+                                similique esse odit.
+                            </span>
+                        </span>
+                        Выбери тип охлаждения
+                    </p>
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="cooling" value="1">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">Водяное</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="cooling" value="2">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">Воздух</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="cooling" value="3">
+                            <span class="btns-group__item-inner btns-group__item-inner--small">Кастом</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mods__block">
+                    <p class="mods__block-title">
+                        <span class="info">
+                            <button class="info__button" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#info" />
+                                </svg>
+                            </button>
+                            <span class="info__popover">
+                                <span><span></span></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
+                                similique esse odit.
+                            </span>
+                        </span>
+                        Дополнительные параметры
+                    </p>
+                    <div class="mods__switches">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            Бесшумный
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            подсветка
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            компактный<br> компьютер
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            С&nbsp;разворотом<br> видеокарты
+                        </label>
+                    </div>
+                </div>
+                <div class="mods__block">
+                    <p class="mods__block-title">ПЛАТФОРМА</p>
+                    <p class="mods__block-subtitle">Процессор</p>
+                    <div class="radio-group">
+                        <label class="radio-group__item">
+                            <input type="radio" name="cpu" value="1">
+                            <span class="radio-group__item-inner">AMD</span>
+                        </label>
+                        <label class="radio-group__item">
+                            <input type="radio" name="cpu" value="2">
+                            <span class="radio-group__item-inner">INTEL</span>
+                        </label>
+                        <label class="radio-group__item">
+                            <input type="radio" name="cpu" value="3" checked>
+                            <span class="radio-group__item-inner">Не выбрано</span>
+                        </label>
+                    </div>
+                    <p class="mods__block-subtitle">Видеокарта</p>
+                    <div class="radio-group">
+                        <label class="radio-group__item">
+                            <input type="radio" name="gpu" value="1">
+                            <span class="radio-group__item-inner">AMD</span>
+                        </label>
+                        <label class="radio-group__item">
+                            <input type="radio" name="gpu" value="2">
+                            <span class="radio-group__item-inner">Nvidia</span>
+                        </label>
+                        <label class="radio-group__item">
+                            <input type="radio" name="gpu" value="3" checked>
+                            <span class="radio-group__item-inner">Не выбрано</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mods__block">
+                    <label class="switch">
+                        <input class="js-series" type="checkbox">
+                        <span class="switch__icon"></span>
+                        Специальные<br> серии
+                    </label>
+                </div>
+                <div class="mods__block mods__brands">
+                    <p class="mods__brands-title">Бренды</p>
+                    <div class="brands">
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_1.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_2.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_3.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_4.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_5.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="cards">
 

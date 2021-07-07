@@ -2,14 +2,13 @@
     border-radius: 4px;
     background-color: rgba($main_color, 0.3);
     display: inline-flex;
-    min-width: 304px;
     padding: 4px;
+    vertical-align: top;
     @media(min-width: $sm) {
         padding-left: 8px;
         padding-right: 8px;
     }
     @media(min-width: $fhd) {
-        min-width: 408px;
         padding-top: 8px;
         padding-bottom: 8px;
     }
@@ -79,93 +78,175 @@
     }
 }
 
-.radio {
-    cursor: pointer;
-    display: block;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 30px;
-
-    &__input {
-        position: absolute;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        width: 1px;
-
-        &:checked + .radio__radio {
-            background-color: $main_color;
-            border-color: $main_color;
-        }
-
-        &:checked + .radio__radio::after {
-            background-color: #fff;
-        }
-    }
-
-    &__radio {
-        background-color: #292929;
-        border-radius: 50%;
-        border: 1px solid #474747;
-        height: 20px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transition: background-color 0.3s, border-color 0.3s;
-        width: 20px;
-
-        &::after {
-            background-color: transparent;
-            border-radius: 50%;
-            content: '';
-            height: 8px;
-            left: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: background-color 0.3s;
-            width: 8px;
-        }
-    }
-}
-
 .checkbox {
+    align-items: center;
     cursor: pointer;
-    display: block;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 34px;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.16px;
+    margin-bottom: 16px;
+    vertical-align: top;
+    @media(min-width: $sm) {
+        font-size: 18px;
+        line-height: 1.44444;
+        letter-spacing: 0.18px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 24px;
+    }
 
-    &__input {
+    input {
         position: absolute;
         height: 1px;
         overflow: hidden;
         clip: rect(0 0 0 0);
         width: 1px;
 
-        &:checked + .checkbox__icon {
-            background-color: $main_color;
-            background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M1 5L4.33333 8.5L11 1.5' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            border-color: $main_color;
+        &:checked + .checkbox__icon::before {
+            opacity: 1;
         }
     }
 
     &__icon {
-        border: 1px solid #474747;
-        background-color: #292929;
-        color: #fff;
+        align-self: flex-start;
+        border: 2px solid rgba($main_color, 0.5);
+        background-color: rgba($main_color, 0.3);
+        border-radius: 4px;
         cursor: pointer;
-        font-size: 14px;
-        height: 20px;
-        line-height: 18px;
+        height: 30px;
         left: 0;
-        position: absolute;
+        margin-right: 16px;
+        min-width: 30px;
+        position: relative;
         top: 0;
+        width: 30px;
+
+        &::before {
+            background-color: $main_color;
+            border-radius: 2px;
+            content: '';
+            height: 18px;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s;
+            width: 18px;
+            z-index: 1;
+        }
+    }
+}
+
+.switch {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33333;
+    letter-spacing: 0.18px;
+    margin-bottom: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: top;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+
+        &:checked + .switch__icon {
+            background-color: rgba($main_color, 0.3);
+            border-color: rgba($main_color, 0.5);
+
+            &::before {
+                background-color: $main_color;
+                box-shadow: 0 0 6px 0 $main_color;
+                left: 30px;
+            }
+        }
+    }
+
+    &__icon {
+        //align-self: flex-start;
+        border: 2px solid rgba(#fff, 0.5);
+        background-color: rgba(#fff, 0.3);
+        border-radius: 32px;
+        cursor: pointer;
+        height: 32px;
+        margin-right: 16px;
+        min-width: 64px;
+        position: relative;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 64px;
+
+        &::before {
+            background-color: rgba(#fff, 0.8);
+            border-radius: 32px;
+            content: '';
+            height: 32px;
+            left: -2px;
+            position: absolute;
+            top: -2px;
+            transition: background-color 0.3s, left 0.3s;
+            width: 32px;
+            z-index: 1;
+        }
+    }
+}
+
+.radio-group {
+    border-radius: 20px;
+    background-color: rgba($main_color, 0.3);
+    display: inline-flex;
+    vertical-align: top;
+
+    &__item {
+        flex-grow: 1;
+        position: relative;
+
+        input {
+            position: absolute;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            width: 1px;
+
+            &:checked + .radio-group__item-inner {
+                background-color: $main_color;
+            }
+        }
+    }
+
+    &__item-inner {
+        align-items: center;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1.33333;
+        min-height: 40px;
+        padding: 12px 20px;
         text-align: center;
-        width: 20px;
+        transition: background-color 0.3s;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+            min-height: 40px;
+            min-width: 110px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
     }
 }
