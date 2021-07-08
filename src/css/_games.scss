@@ -523,6 +523,7 @@
             }
 
             .switch {
+                width: 100%;
                 @media(min-width: $hd) {
                     width: 256px;
                 }

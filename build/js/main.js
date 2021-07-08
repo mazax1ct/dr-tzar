@@ -43,3 +43,21 @@ $(document).on('change', '.js-series', function () {
   $('.mods__brands').slideToggle();
   return false;
 });
+
+//открытие настроек в карточке
+$(document).on('click', '.js-card-settings-opener', function () {
+  $(this).next('.card__settings').addClass('is-open');
+  return false;
+});
+
+//закрытие настроек в карточке
+$(document).on('click', '.js-card-settings-closer', function () {
+  $(this).parent('.card__settings').removeClass('is-open');
+  return false;
+});
+
+//переключение дизайн/цвет
+$(document).on('change', '.js-card-switch', function () {
+  $('.card__switch-radios').fadeToggle().css('display', 'flex');
+  return false;
+});

@@ -92,6 +92,15 @@
                 margin-left: 36px;
             }
         }
+
+        &:nth-child(3) {
+            .btns-group__item-inner {
+                font-size: 12px;
+                @media(min-width: $sm) {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 
     &__block-title {

@@ -124,10 +124,8 @@
                 }
             }
 
-            .btns-group__item-inner--small {
-                @media(min-width: $sm) {
-                    font-size: 12px;
-                }
+            .btns-group__item-inner {
+                font-size: 12px;
                 @media(min-width: $fhd) {
                     font-size: 16px;
                     min-height: 40px;
