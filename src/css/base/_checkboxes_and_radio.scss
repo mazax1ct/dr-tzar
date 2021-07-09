@@ -4,6 +4,7 @@
     display: inline-flex;
     padding: 4px;
     vertical-align: top;
+    user-select: none;
     @media(min-width: $sm) {
         padding-left: 8px;
         padding-right: 8px;
@@ -145,6 +146,7 @@
     text-align: left;
     text-transform: uppercase;
     vertical-align: top;
+    user-select: none;
 
     &:last-child {
         margin-bottom: 0;
@@ -202,6 +204,7 @@
     background-color: rgba($main_color, 0.3);
     display: inline-flex;
     vertical-align: top;
+    user-select: none;
 
     &__item {
         flex-grow: 1;

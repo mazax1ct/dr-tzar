@@ -223,6 +223,16 @@
 
         &:hover {
             &::after {
+                opacity: 0.5;
+            }
+
+            img {
+                box-shadow: 0 0 4px 0 rgba($main_color, 0.8);
+            }
+        }
+
+        &.is-active {
+            &::after {
                 opacity: 1;
             }
 

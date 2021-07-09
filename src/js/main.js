@@ -29,6 +29,12 @@ $(document).on('click', '.js-filter-closer', function () {
   return false;
 });
 
+//выбор игры
+$(document).on('click', '.games__game', function () {
+  $(this).toggleClass('is-active');
+  return false;
+});
+
 //тоглер модов на мобилах
 $(document).on('click', '.js-mods-toggler', function () {
   if($('body').width() < 767) {
