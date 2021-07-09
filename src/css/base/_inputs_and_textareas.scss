@@ -1,0 +1,115 @@
+.input,
+.textarea {
+    border: 2px solid rgba(#fff, 0.7);
+    border-radius: 2px;
+    background-color: transparent;
+    color: #fff;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    width: 100%;
+
+    &:focus,
+    &:hover {
+        border-color: #fff;
+    }
+
+    &.error {
+        border-color: $main_color;
+        color: $main_color;
+
+        &:focus {
+            border-color: $main_color;
+            color: rgba($main_color, 0.3);
+
+            &::-webkit-input-placeholder {
+                color: rgba($main_color, 0.3);
+            }
+
+            &::-moz-placeholder {
+                color: rgba($main_color, 0.3);
+            }
+
+            &:-ms-input-placeholder {
+                color: rgba($main_color, 0.3);
+            }
+        }
+
+        &::-webkit-input-placeholder {
+            color: $main_color;
+        }
+
+        &::-moz-placeholder {
+            color: $main_color;
+        }
+
+        &:-ms-input-placeholder {
+            color: $main_color;
+        }
+    }
+
+    &::-webkit-input-placeholder {
+        color: rgba(#fff, 0.7);
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: rgba(#fff, 0.7);
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: rgba(#fff, 0.7);
+        opacity: 1;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        color: rgba(#fff, 0.3);
+        opacity: 1;
+    }
+
+    &:focus::-moz-placeholder {
+        color: rgba(#fff, 0.3);
+        opacity: 1;
+    }
+
+    &:focus:-ms-input-placeholder {
+        color: rgba(#fff, 0.3);
+        opacity: 1;
+    }
+
+    &.disabled,
+    &:disabled {
+        border-color: rgba(#fff, 0.3);
+        cursor: default;
+        pointer-events: none;
+
+        &:hover {
+            border-color: rgba(#fff, 0.3);
+        }
+
+        &::-webkit-input-placeholder {
+            color: rgba(#fff, 0.3);
+        }
+
+        &::-moz-placeholder {
+            color: rgba(#fff, 0.3);
+        }
+
+        &:-ms-input-placeholder {
+            color: rgba(#fff, 0.3);
+        }
+    }
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.textarea {
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+}

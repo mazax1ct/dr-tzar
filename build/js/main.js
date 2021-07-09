@@ -58,6 +58,32 @@ $(document).on('click', '.js-card-settings-closer', function () {
 
 //переключение дизайн/цвет
 $(document).on('change', '.js-card-switch', function () {
-  $('.card__switch-radios').fadeToggle().css('display', 'flex');
+  var parent = $(this).closest('.card__switch-block');
+
+  parent.find('.card__switch-radios.is-active').removeClass('animated'); //анимация движения
+  setTimeout(function() {
+    parent.find('.card__switch-radios.is-active').removeClass('visible'); //анимация фейда
+    setTimeout(function() {
+      parent.find('.card__switch-radios').toggleClass('is-active'); //переключаем блок
+      setTimeout(function() {
+        parent.find('.card__switch-radios.is-active').addClass('visible'); //анимация фейда
+        setTimeout(function() {
+          parent.find('.card__switch-radios.is-active').addClass('animated'); //анимация движения
+        },100);//ждём завершиния анимации фейда
+      },100); //ждём переключение блока
+    },300); //ждём завершиния анимации фейда
+  },300); //ждём завершиния анимации
+  return false;
+});
+
+//открытие попапа
+$(document).on('click', '.js-popup-opener', function () {
+  $('.popup-shade').fadeIn();
+  return false;
+});
+
+//закрытие попапа
+$(document).on('click', '.js-popup-closer', function () {
+  $('.popup-shade').fadeOut();
   return false;
 });
