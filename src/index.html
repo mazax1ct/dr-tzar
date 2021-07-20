@@ -27,6 +27,12 @@
         <p class="config__title">Выбери конфигурацию</p>
 
         <div class="params">
+            <button class="params__reset" type="button" title="Сбросить">
+                <svg aria-hidden="true">
+                    <use xlink:href="#reset" />
+                </svg>
+                <span>Сбросить</span>
+            </button>
             <p class="js-params-toggler config__subtitle">
                 <span class="config__subtitle-num">1</span>
                 <span class="config__subtitle-container">
@@ -39,6 +45,12 @@
                 </span>
             </p>
             <div class="params__inner">
+                <button class="params__reset" type="button" title="Сбросить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#reset" />
+                    </svg>
+                    <span>Сбросить</span>
+                </button>
                 <div class="params__block">
                     <p class="params__block-title">
                         <span class="info">
@@ -249,11 +261,17 @@
                             </label>
                         </div>
                     </div>
+                    <button class="filter__reset" type="button" title="Сбросить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#reset" />
+                        </svg>
+                        <span>Сбросить</span>
+                    </button>
                 </div>
             </div>
 
-            <div class="games__slider-block">
-                <div class="js-games-slider swiper-container">
+            <div class="games__slider-block games__slider-block--no_games">
+                <!--<div class="js-games-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <button class="games__game" type="button"><img src="images/content/game_1.jpg" srcset="images/content/game_1@2x.jpg" alt="Название игры"></button>
@@ -296,39 +314,45 @@
                     <svg aria-hidden="true">
                         <use xlink:href="#arrow_right" />
                     </svg>
-                </button>
+                </button>-->
+                <p>ничего не нашлось</p>
+                <img width="285" height="253" src="images/icons/no_items.svg" alt="">
             </div>
 
             <div class="games__games-block">
                 <p class="games__games-block-title">Твои игры</p>
                 <div class="games__list">
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')" title="Удалить">
+                        <!--<button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
-                        </button>
+                        </button>-->
+                        <div class="games__picked-game"></div>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')" title="Удалить">
+                        <!--<button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
-                        </button>
+                        </button>-->
+                        <div class="games__picked-game"></div>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')" title="Удалить">
+                        <!--<button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
-                        </button>
+                        </button>-->
+                        <div class="games__picked-game"></div>
                     </div>
                     <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')" title="Удалить">
+                        <!--<button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')" title="Удалить">
                             <svg aria-hidden="true">
                                 <use xlink:href="#close" />
                             </svg>
-                        </button>
+                        </button>-->
+                        <div class="games__picked-game"></div>
                     </div>
                     <div class="games__list-item">
                         <div class="games__picked-game"></div>
@@ -339,6 +363,12 @@
         </div>
 
         <div class="mods">
+            <button class="mods__reset" type="button" title="Сбросить">
+                <svg aria-hidden="true">
+                    <use xlink:href="#reset" />
+                </svg>
+                <span>Сбросить</span>
+            </button>
             <p class="js-mods-toggler config__subtitle">
                 <span class="config__subtitle-num">3</span>
                 <span class="config__subtitle-container">
@@ -351,148 +381,156 @@
                 </span>
             </p>
             <div class="mods__inner">
-                <div class="mods__block">
-                    <p class="mods__block-title">
-                        <span class="info">
-                            <button class="info__button" type="button">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#info" />
-                                </svg>
-                            </button>
-                            <span class="info__popover">
-                                <span><span></span></span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                similique esse odit.
+                <button class="mods__reset" type="button" title="Сбросить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#reset" />
+                    </svg>
+                    <span>Сбросить</span>
+                </button>
+                <div class="mods__container">
+                    <div class="mods__block">
+                        <p class="mods__block-title">
+                            <span class="info">
+                                <button class="info__button" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#info" />
+                                    </svg>
+                                </button>
+                                <span class="info__popover">
+                                    <span><span></span></span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
+                                    similique esse odit.
+                                </span>
                             </span>
-                        </span>
-                        Выбери тип охлаждения
-                    </p>
-                    <div class="btns-group">
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="cooling" value="1">
-                            <span class="btns-group__item-inner">Водяное</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="cooling" value="2">
-                            <span class="btns-group__item-inner">Воздух</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="cooling" value="3">
-                            <span class="btns-group__item-inner">Кастом</span>
-                        </label>
+                            Выбери тип охлаждения
+                        </p>
+                        <div class="btns-group">
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="cooling" value="1">
+                                <span class="btns-group__item-inner">Водяное</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="cooling" value="2">
+                                <span class="btns-group__item-inner">Воздух</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="cooling" value="3">
+                                <span class="btns-group__item-inner">Кастом</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="mods__block">
-                    <p class="mods__block-title">
-                        <span class="info">
-                            <button class="info__button" type="button">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#info" />
-                                </svg>
-                            </button>
-                            <span class="info__popover">
-                                <span><span></span></span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                similique esse odit.
+                    <div class="mods__block">
+                        <p class="mods__block-title">
+                            <span class="info">
+                                <button class="info__button" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#info" />
+                                    </svg>
+                                </button>
+                                <span class="info__popover">
+                                    <span><span></span></span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
+                                    similique esse odit.
+                                </span>
                             </span>
-                        </span>
-                        Дополнительные параметры
-                    </p>
-                    <div class="mods__switches">
+                            Дополнительные параметры
+                        </p>
+                        <div class="mods__switches">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                Бесшумный
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                подсветка
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                компактный<br> компьютер
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                С&nbsp;разворотом<br> видеокарты
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mods__block">
+                        <p class="mods__block-title">ПЛАТФОРМА</p>
+                        <p class="mods__block-subtitle">Процессор</p>
+                        <div class="radio-group">
+                            <label class="radio-group__item">
+                                <input type="radio" name="cpu" value="1">
+                                <span class="radio-group__item-inner">AMD</span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="cpu" value="2">
+                                <span class="radio-group__item-inner">INTEL</span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="cpu" value="3" checked>
+                                <span class="radio-group__item-inner">Не выбрано</span>
+                            </label>
+                        </div>
+                        <p class="mods__block-subtitle">Видеокарта</p>
+                        <div class="radio-group">
+                            <label class="radio-group__item">
+                                <input type="radio" name="gpu" value="1">
+                                <span class="radio-group__item-inner">AMD</span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="gpu" value="2">
+                                <span class="radio-group__item-inner">Nvidia</span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="gpu" value="3" checked>
+                                <span class="radio-group__item-inner">Не выбрано</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mods__block">
                         <label class="switch">
-                            <input type="checkbox">
+                            <input class="js-series" type="checkbox">
                             <span class="switch__icon"></span>
-                            Бесшумный
-                        </label>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="switch__icon"></span>
-                            подсветка
-                        </label>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="switch__icon"></span>
-                            компактный<br> компьютер
-                        </label>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="switch__icon"></span>
-                            С&nbsp;разворотом<br> видеокарты
+                            Специальные<br> серии
                         </label>
                     </div>
-                </div>
-                <div class="mods__block">
-                    <p class="mods__block-title">ПЛАТФОРМА</p>
-                    <p class="mods__block-subtitle">Процессор</p>
-                    <div class="radio-group">
-                        <label class="radio-group__item">
-                            <input type="radio" name="cpu" value="1">
-                            <span class="radio-group__item-inner">AMD</span>
-                        </label>
-                        <label class="radio-group__item">
-                            <input type="radio" name="cpu" value="2">
-                            <span class="radio-group__item-inner">INTEL</span>
-                        </label>
-                        <label class="radio-group__item">
-                            <input type="radio" name="cpu" value="3" checked>
-                            <span class="radio-group__item-inner">Не выбрано</span>
-                        </label>
-                    </div>
-                    <p class="mods__block-subtitle">Видеокарта</p>
-                    <div class="radio-group">
-                        <label class="radio-group__item">
-                            <input type="radio" name="gpu" value="1">
-                            <span class="radio-group__item-inner">AMD</span>
-                        </label>
-                        <label class="radio-group__item">
-                            <input type="radio" name="gpu" value="2">
-                            <span class="radio-group__item-inner">Nvidia</span>
-                        </label>
-                        <label class="radio-group__item">
-                            <input type="radio" name="gpu" value="3" checked>
-                            <span class="radio-group__item-inner">Не выбрано</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="mods__block">
-                    <label class="switch">
-                        <input class="js-series" type="checkbox">
-                        <span class="switch__icon"></span>
-                        Специальные<br> серии
-                    </label>
-                </div>
-                <div class="mods__block mods__brands">
-                    <p class="mods__brands-title">Бренды</p>
-                    <div class="brands">
-                        <div class="brands__item">
-                            <label class="brands__brand">
-                                <input type="checkbox">
-                                <img src="images/content/brand_1.jpg" alt="Название бренда">
-                            </label>
-                        </div>
-                        <div class="brands__item">
-                            <label class="brands__brand">
-                                <input type="checkbox">
-                                <img src="images/content/brand_2.jpg" alt="Название бренда">
-                            </label>
-                        </div>
-                        <div class="brands__item">
-                            <label class="brands__brand">
-                                <input type="checkbox">
-                                <img src="images/content/brand_3.jpg" alt="Название бренда">
-                            </label>
-                        </div>
-                        <div class="brands__item">
-                            <label class="brands__brand">
-                                <input type="checkbox">
-                                <img src="images/content/brand_4.jpg" alt="Название бренда">
-                            </label>
-                        </div>
-                        <div class="brands__item">
-                            <label class="brands__brand">
-                                <input type="checkbox">
-                                <img src="images/content/brand_5.jpg" alt="Название бренда">
-                            </label>
+                    <div class="mods__block mods__brands">
+                        <p class="mods__brands-title">Бренды</p>
+                        <div class="brands">
+                            <div class="brands__item">
+                                <label class="brands__brand">
+                                    <input type="checkbox">
+                                    <img src="images/content/brand_1.jpg" alt="Название бренда">
+                                </label>
+                            </div>
+                            <div class="brands__item">
+                                <label class="brands__brand">
+                                    <input type="checkbox">
+                                    <img src="images/content/brand_2.jpg" alt="Название бренда">
+                                </label>
+                            </div>
+                            <div class="brands__item">
+                                <label class="brands__brand">
+                                    <input type="checkbox">
+                                    <img src="images/content/brand_3.jpg" alt="Название бренда">
+                                </label>
+                            </div>
+                            <div class="brands__item">
+                                <label class="brands__brand">
+                                    <input type="checkbox">
+                                    <img src="images/content/brand_4.jpg" alt="Название бренда">
+                                </label>
+                            </div>
+                            <div class="brands__item">
+                                <label class="brands__brand">
+                                    <input type="checkbox">
+                                    <img src="images/content/brand_5.jpg" alt="Название бренда">
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -505,31 +543,65 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
-                                <p class="card__title">digitalrazor M</p>
-                                <p class="card__price">441 300 ₽</p>
+                                <button class="card__reset" type="button" title="Сбросить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#reset" />
+                                    </svg>
+                                    <span>Сбросить</span>
+                                </button>
+                                <p class="card__title card__title--no_price">digitalrazor M</p>
                                 <p class="card__label">Новинка</p>
-                                <div class="js-design-slider card__slider swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                <div class="card__slider-block">
+                                    <div class="card__slider is-active visible animated">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
-                                    <button class="swiper-button-prev" type="button" title="Назад">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_left" />
-                                        </svg>
-                                    </button>
-                                    <button class="swiper-button-next" type="button" title="Вперёд">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_right" />
-                                        </svg>
-                                    </button>
+                                    <div class="card__slider">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card__switch-block">
                                     <label class="card__switch">
@@ -749,30 +821,65 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
+                                <button class="card__reset" type="button" title="Сбросить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#reset" />
+                                    </svg>
+                                    <span>Сбросить</span>
+                                </button>
                                 <p class="card__title">digitalrazor M</p>
                                 <p class="card__price">441 300 ₽</p>
-                                <div class="js-design-slider card__slider swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                <div class="card__slider-block">
+                                    <div class="card__slider is-active visible animated">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
-                                    <button class="swiper-button-prev" type="button" title="Назад">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_left" />
-                                        </svg>
-                                    </button>
-                                    <button class="swiper-button-next" type="button" title="Вперёд">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_right" />
-                                        </svg>
-                                    </button>
+                                    <div class="card__slider">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card__switch-block">
                                     <label class="card__switch">
@@ -984,7 +1091,7 @@
                                 </div>
                                 <div class="card__buttons">
                                     <a class="btn" href="#">Конфигуратор</a>
-                                    <a class="btn btn--type_2" href="#">Купть</a>
+                                    <a class="btn btn--type_2" href="#">Купить</a>
                                 </div>
                             </div>
                         </div>
@@ -992,30 +1099,65 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
+                                <button class="card__reset" type="button" title="Сбросить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#reset" />
+                                    </svg>
+                                    <span>Сбросить</span>
+                                </button>
                                 <p class="card__title">digitalrazor M</p>
                                 <p class="card__price">441 300 ₽</p>
-                                <div class="js-design-slider card__slider swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                <div class="card__slider-block">
+                                    <div class="card__slider is-active visible animated">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
-                                    <button class="swiper-button-prev" type="button" title="Назад">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_left" />
-                                        </svg>
-                                    </button>
-                                    <button class="swiper-button-next" type="button" title="Вперёд">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#arrow_right" />
-                                        </svg>
-                                    </button>
+                                    <div class="card__slider">
+                                        <div class="js-design-slider swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
+                                                </div>
+                                            </div>
+                                            <button class="swiper-button-prev" type="button" title="Назад">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_left" />
+                                                </svg>
+                                            </button>
+                                            <button class="swiper-button-next" type="button" title="Вперёд">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="#arrow_right" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card__switch-block">
                                     <label class="card__switch">
@@ -1246,6 +1388,7 @@
                 </svg>
             </button>
         </div>
+
         <div class="popup-shade">
             <div class="popup-shade__inner">
                 <div class="popup">
@@ -1296,84 +1439,11 @@
 </body>
 
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
 <script>
-    const gamesSlider = new Swiper('.js-games-slider', {
-        loop: true,
-        navigation: {
-            nextEl: '.js-games-next',
-            prevEl: '.js-games-prev',
-        },
-        slidesPerView: 4,
-        spaceBetween: 4,
-        breakpoints: {
-            768: {
-                slidesPerView: 6,
-                spaceBetween: 0
-            },
-            1200: {
-                slidesPerView: 9,
-                spaceBetween: 4
-            },
-            1900: {
-                slidesPerView: 9,
-                spaceBetween: 8
-            },
-            2500: {
-                slidesPerView: 9,
-                spaceBetween: 16
-            }
-        }
-    });
 
-    const designSlider = new Swiper('.js-design-slider', {
-        loop: true,
-        navigation: {
-            nextEl: '.js-design-slider .swiper-button-next',
-            prevEl: '.js-design-slider .swiper-button-prev',
-        },
-        slidesPerView: 1
-    });
-
-    const configsSlider = new Swiper('.js-configs-slider', {
-        loop: false,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: function(index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
-        },
-        navigation: {
-            nextEl: '.js-configs-next',
-            prevEl: '.js-configs-prev'
-        },
-        slidesPerView: 1,
-        breakpoints: {
-            1200: {
-                allowTouchMove: false,
-                shortSwipes: false,
-                simulateTouch: false,
-                slidesPerView: 2,
-                spaceBetween: 16
-            },
-            1900: {
-                allowTouchMove: false,
-                shortSwipes: false,
-                simulateTouch: false,
-                slidesPerView: 2,
-                spaceBetween: 56
-            },
-            2500: {
-                allowTouchMove: false,
-                shortSwipes: false,
-                simulateTouch: false,
-                slidesPerView: 2,
-                spaceBetween: 88
-            }
-        }
-    });
 </script>
 
 </html>

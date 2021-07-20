@@ -5,6 +5,7 @@
     margin-right: auto;
     max-width: 536px;
     padding: 16px 22px 32px;
+    position: relative;
     @media(min-width: $sm) {
         box-shadow: none;
         max-width: 100%;
@@ -32,6 +33,87 @@
         width: 100%;
     }
 
+    &__reset {
+        align-items: center;
+        border-radius: 4px;
+        background-color: rgba(#fff,0.1);
+        border: 1px solid transparent;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        left: auto;
+        padding: 0;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 40px;
+        z-index: 1;
+        @media(min-width: $sm) {
+            display: none;
+            right: 16px;
+            top: 16px;
+        }
+        @media(min-width: $hd) {
+            background-color: rgba(#fff, 0.2);
+            font-size: 8px;
+            height: 32px;
+            padding-left: 16px;
+            padding-right: 16px;
+            right: 8px;
+            top: 8px;
+            width: auto;
+        }
+        @media(min-width: $fhd) {
+            font-size: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            right: 16px;
+            top: 16px;
+        }
+        @media(min-width: $ufhd) {
+            right: 24px;
+            top: 24px;
+        }
+
+        span {
+            display: none;
+            @media(min-width: $hd) {
+                display: block;
+            }
+        }
+
+        svg {
+            fill: #fff;
+            height: 20px;
+            width: 20px;
+            @media(min-width: $hd) {
+                height: 18px;
+                margin-right: 4px;
+                width: 18px;
+            }
+            @media(min-width: $ufhd) {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        &:focus,
+        &:hover {
+            border-color: $main_color;
+            background-color: rgba($main_color, 0.7);
+        }
+
+        &:active {
+            border-color: $main_color;
+            background-color: $main_color;
+        }
+    }
+
     &__inner {
         display: none;
         padding-top: 28px;
@@ -44,12 +126,10 @@
             margin-right: auto;
             padding-top: 32px;
             padding-bottom: 32px;
+            position: relative;
         }
         @media(min-width: $hd) {
             box-shadow: 0 0 12px 0 $main_color;
-            display: flex !important;
-            flex-wrap: wrap;
-            justify-content: space-between;
             max-width: 1216px;
             padding: 16px 16px 22px;
         }
@@ -61,6 +141,21 @@
         @media(min-width: $ufhd) {
             max-width: 2080px;
             padding: 26px 140px 12px;
+        }
+
+        .mods__reset {
+            display: none;
+            @media(min-width: $sm) {
+                display: flex;
+            }
+        }
+    }
+
+    &__container {
+        @media(min-width: $hd) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
@@ -171,6 +266,7 @@
                 font-size: 12px;
                 line-height: 1.16666;
                 min-width: 192px;
+                overflow: hidden;
                 @media(min-width: $sm) {
                     min-width: 0;
                 }
@@ -188,6 +284,7 @@
             }
 
             .switch input:checked + .switch__icon::before {
+                box-shadow: 0 0 3px 0 #d43c38;
                 @media(min-width: $fhd) {
                     left: 38px;
                 }
