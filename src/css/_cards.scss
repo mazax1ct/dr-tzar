@@ -14,6 +14,63 @@
         max-width: 2080px;
     }
 
+    &--no_cards {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.125;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 80px;
+        text-transform: uppercase;
+        text-align: center;
+        @media(min-width: $hd) {
+            font-size: 32px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 48px;
+            padding-bottom: 0;
+            padding-top: 72px;
+        }
+        @media(min-width: $ufhd) {
+            padding-top: 80px;
+        }
+
+        p {
+            margin: 0 0 6px;
+            @media(min-width: $sm) {
+                margin-bottom: 32px;
+            }
+            @media(min-width: $hd) {
+                margin-bottom: 24px;
+            }
+            @media(min-width: $fhd) {
+                margin-bottom: 72px;
+            }
+            @media(min-width: $ufhd) {
+                margin-bottom: 40px;
+            }
+        }
+
+        img {
+            width: 100%;
+            @media(min-width: $sm) {
+                width: 536px;
+            }
+            @media(min-width: $hd) {
+                width: 542px;
+            }
+            @media(min-width: $fhd) {
+                width: 844px;
+            }
+            @media(min-width: $ufhd) {
+                width: 874px;
+            }
+        }
+    }
+
     & > .swiper-button-next,
     & > .swiper-button-prev {
         align-items: center;
@@ -682,8 +739,8 @@
 
         img {
             opacity: 0;
-            transform: scale(0.1);
-            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            //transform: scale(0.1);
+            transition: opacity 0.5s ease-in-out;
         }
 
         &.is-active {
@@ -695,12 +752,11 @@
                 opacity: 1;
             }
         }
-
-        &.animated {
+        /*&.animated {
             img {
                 transform: scale(1);
             }
-        }
+        }*/
     }
 
     &__switch-block {

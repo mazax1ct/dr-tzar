@@ -146,7 +146,7 @@ $(document).on('change', '.js-card-switch', function () {
   var parent = $(this).closest('.card__switch-block');
 
 
-  container.find('.card__slider.is-active').removeClass('animated visible');
+  container.find('.card__slider.is-active').removeClass('visible');
   parent.find('.card__switch-radios.is-active').removeClass('animated'); //анимация движения
   setTimeout(function() {
     parent.find('.card__switch-radios.is-active').removeClass('visible'); //анимация фейда
@@ -154,7 +154,7 @@ $(document).on('change', '.js-card-switch', function () {
       container.find('.card__slider').toggleClass('is-active');
       parent.find('.card__switch-radios').toggleClass('is-active'); //переключаем блок
       setTimeout(function() {
-        container.find('.card__slider.is-active').addClass('visible animated');
+        container.find('.card__slider.is-active').addClass('visible');
         parent.find('.card__switch-radios.is-active').addClass('visible'); //анимация фейда
         setTimeout(function() {
           parent.find('.card__switch-radios.is-active').addClass('animated'); //анимация движения
