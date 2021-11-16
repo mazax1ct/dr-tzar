@@ -375,14 +375,14 @@
                     </span>
                 </span>
             </p>
-            <div class="mods__inner">
+            <div class="mods__inner mods__inner--type_1">
                 <button class="mods__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
                     <span>Сбросить</span>
                 </button>
-                <div class="mods__container mods__container--type_1">
+                <div class="mods__container mods__container--type_2">
                     <div class="mods__block">
                         <p class="mods__block-title">
                             <span class="info">
@@ -397,23 +397,24 @@
                                     similique esse odit.
                                 </span>
                             </span>
-                            Выбери тип охлаждения
+                            Процессор
                         </p>
                         <div class="btns-group">
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="1">
-                                <span class="btns-group__item-inner">Водяное</span>
+                                <input type="checkbox" name="cpu" value="1">
+                                <span class="btns-group__item-inner">AMD</span>
                             </label>
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="2">
-                                <span class="btns-group__item-inner">Воздух</span>
+                                <input type="checkbox" name="cpu" value="2">
+                                <span class="btns-group__item-inner">INTEL</span>
                             </label>
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="3">
-                                <span class="btns-group__item-inner">Кастом</span>
+                                <input type="checkbox" name="cpu" value="3">
+                                <span class="btns-group__item-inner">Автовыбор</span>
                             </label>
                         </div>
                     </div>
+
                     <div class="mods__block">
                         <p class="mods__block-title">
                             <span class="info">
@@ -428,71 +429,42 @@
                                     similique esse odit.
                                 </span>
                             </span>
-                            Дополнительные параметры
+                            Видеокарта
                         </p>
+                        <div class="btns-group">
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="1">
+                                <span class="btns-group__item-inner">AMD</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="2">
+                                <span class="btns-group__item-inner">NVIDIA</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="3">
+                                <span class="btns-group__item-inner">Автовыбор</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mods__block mods__block--type_1">
                         <div class="mods__switches">
                             <label class="switch">
-                                <input type="checkbox">
+                                <input class="js-series" type="checkbox">
                                 <span class="switch__icon"></span>
-                                Бесшумный
+                                Специальные<br> серии
                             </label>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="switch__icon"></span>
-                                подсветка
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                компактный<br> компьютер
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                С&nbsp;разворотом<br> видеокарты
+                                <span>
+                                    <span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>
+                                    опции
+                                </span>
                             </label>
                         </div>
                     </div>
-                    <div class="mods__block">
-                        <p class="mods__block-title">ПЛАТФОРМА</p>
-                        <p class="mods__block-subtitle">Процессор</p>
-                        <div class="radio-group">
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="1">
-                                <span class="radio-group__item-inner">AMD</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="2">
-                                <span class="radio-group__item-inner">INTEL</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="3" checked>
-                                <span class="radio-group__item-inner">Не выбрано</span>
-                            </label>
-                        </div>
-                        <p class="mods__block-subtitle">Видеокарта</p>
-                        <div class="radio-group">
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="1">
-                                <span class="radio-group__item-inner">AMD</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="2">
-                                <span class="radio-group__item-inner">Nvidia</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="3" checked>
-                                <span class="radio-group__item-inner">Не выбрано</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mods__block">
-                        <label class="switch">
-                            <input class="js-series" type="checkbox">
-                            <span class="switch__icon"></span>
-                            Специальные<br> серии
-                        </label>
-                    </div>
+
                     <div class="mods__block mods__brands">
                         <p class="mods__brands-title">Бренды</p>
                         <div class="brands">
@@ -538,12 +510,12 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
+                                <!--<button class="card__reset" type="button" title="Сбросить">
                                     <svg aria-hidden="true">
                                         <use xlink:href="#reset" />
                                     </svg>
                                     <span>Сбросить</span>
-                                </button>
+                                </button>-->
                                 <p class="card__title card__title--no_price">digitalrazor M</p>
                                 <p class="card__label">Новинка</p>
                                 <div class="card__slider-block">
@@ -807,8 +779,8 @@
                                     </div>
                                 </div>
                                 <div class="card__buttons">
-                                    <button class="js-popup-opener btn" type="button">Консультация</button>
                                     <a class="btn btn--type_2" href="#">Конфигуратор</a>
+                                    <a class="btn" type="button">Купить</a>
                                 </div>
                             </div>
                         </div>
@@ -816,12 +788,12 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
+                                <!--<button class="card__reset" type="button" title="Сбросить">
                                     <svg aria-hidden="true">
                                         <use xlink:href="#reset" />
                                     </svg>
                                     <span>Сбросить</span>
-                                </button>
+                                </button>-->
                                 <p class="card__title">digitalrazor M</p>
                                 <p class="card__price">441 300 ₽</p>
                                 <div class="card__slider-block">
@@ -1085,8 +1057,8 @@
                                     </div>
                                 </div>
                                 <div class="card__buttons">
-                                    <a class="btn" href="#">Конфигуратор</a>
-                                    <a class="btn btn--type_2" href="#">Купить</a>
+                                    <a class="btn btn--type_2" href="#">Конфигуратор</a>
+                                    <a class="btn" type="button">Купить</a>
                                 </div>
                             </div>
                         </div>
@@ -1094,12 +1066,12 @@
                     <div class="configs-slider__slide swiper-slide">
                         <div class="card">
                             <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
+                                <!--<button class="card__reset" type="button" title="Сбросить">
                                     <svg aria-hidden="true">
                                         <use xlink:href="#reset" />
                                     </svg>
                                     <span>Сбросить</span>
-                                </button>
+                                </button>-->
                                 <p class="card__title">digitalrazor M</p>
                                 <p class="card__price">441 300 ₽</p>
                                 <div class="card__slider-block">
@@ -1363,8 +1335,8 @@
                                     </div>
                                 </div>
                                 <div class="card__buttons">
-                                    <button class="js-popup-opener btn" type="button">Консультация</button>
                                     <a class="btn btn--type_2" href="#">Конфигуратор</a>
+                                    <a class="btn" type="button">Купить</a>
                                 </div>
                             </div>
                         </div>
