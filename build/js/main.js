@@ -124,7 +124,18 @@ $(document).on('click', '.js-mods-toggler', function () {
 
 //тоггл брендов
 $(document).on('change', '.js-series', function () {
+  $('.mods__additionals').slideUp();
+  $('.js-additional').prop('checked', '');
   $('.mods__brands').slideToggle();
+
+  return false;
+});
+
+$(document).on('change', '.js-additional', function () {
+  $('.mods__brands').slideUp();
+  $('.js-series').prop('checked', '');
+  $('.mods__additionals').slideToggle();
+
   return false;
 });
 

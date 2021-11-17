@@ -450,10 +450,7 @@
                 }
 
                 &:nth-child(2) {
-                    margin-bottom: 20px;
-                    @media(min-width: $sm) {
-                        margin-bottom: 24px;
-                    }
+                    margin-bottom: 32px;
                     @media(min-width: $hd) {
                         margin-bottom: 0;
                     }
@@ -520,6 +517,15 @@
                 }
             }
 
+            .mods__block-title {
+                font-size: 12px;
+                margin-bottom: 20px;
+                @media(min-width: $sm) {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+
             .btns-group {
                 @media(min-width: $sm) {
                     width: 332px;
@@ -536,6 +542,7 @@
                 padding: 8px;
             }
 
+            .mods__additionals,
             .mods__brands {
                 @media(min-width: $hd) {
                     padding-top: 36px;
@@ -543,6 +550,146 @@
                 }
                 @media(min-width: $ufhd) {
                     padding-top: 70px;
+                }
+            }
+
+            .mods__brands-title {
+                .desktop {
+                    @media(max-width: 1199px) {
+                        display: none;
+                    }
+                }
+
+                .mobile {
+                    @media(min-width: $hd) {
+                        display: none;
+                    }
+                }
+            }
+
+            .mods__additionals {
+                padding-top: 32px;
+
+                .mods__brands-title {
+                    @media(min-width: $sm) {
+                        margin-bottom: 24px;
+                    }
+                    @media(min-width: $hd) {
+                        margin-bottom: 0;
+                    }
+                    @media(min-width: $ufhd) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .mods__additionals-inner {
+                @media(min-width: $hd) {
+                    display: flex;
+                }
+            }
+
+            .mods__additionals-block {
+                &:first-child {
+                    .switch {
+                        font-size: 12px;
+                        min-width: 190px;
+                        margin-bottom: 32px;
+                        @media(min-width: $sm) {
+                            margin-bottom: 24px;
+                        }
+                        @media(min-width: $hd) {
+                            margin-bottom: 0;
+                            min-width: 0;
+                        }
+                        @media(min-width: $fhd) {
+                            font-size: 16px;
+                        }
+
+                        &:not(:last-child) {
+                            @media(min-width: 1280px) {
+                                margin-right: 16px;
+                            }
+                            @media(min-width: $fhd) {
+                                margin-right: 24px;
+                            }
+                            @media(min-width: $ufhd) {
+                                margin-right: 32px;
+                            }
+                        }
+
+                        .switch__icon {
+                            @media(min-width: $hd) {
+                                margin-right: 8px;
+                            }
+                            @media(min-width: $fhd) {
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        padding-bottom: 8px;
+                    }
+                    @media(min-width: $hd) {
+                        align-items: center;
+                        display: flex;
+                        margin-right: 40px;
+                        padding-top: 40px;
+                        padding-bottom: 0;
+                    }
+                    @media(min-width: $fhd) {
+                        margin-right: 44px;
+                    }
+                    @media(min-width: $ufhd) {
+                        margin-right: 148px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .mods__block-title {
+                        .desktop {
+                            @media(max-width: 767px) {
+                                display: none;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            margin-bottom: 4px;
+                        }
+                        @media(min-width: $hd) {
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    .btns-group {
+                        @media(min-width: $sm) {
+                            width: 410px;
+                        }
+                    }
+                }
+            }
+
+            .switch {
+                input {
+                    &:checked + .switch__icon {
+                        &::before {
+                            left: 38px;
+                        }
+                    }
+                }
+            }
+
+            .switch__icon {
+                @media(min-width: $fhd) {
+                    height: 40px;
+                    min-width: 80px;
+                    width: 80px;
+                }
+
+                &::before {
+                    @media(min-width: $fhd) {
+                        height: 40px;
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -612,6 +759,7 @@
         }
     }
 
+    &__additionals,
     &__brands {
         display: none;
         padding-top: 24px;
