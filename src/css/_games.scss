@@ -273,6 +273,7 @@
             border-radius: 4px;
         }
 
+        &:focus,
         &:hover {
             &::after {
                 opacity: 0.5;

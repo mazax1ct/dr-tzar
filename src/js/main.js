@@ -187,3 +187,51 @@ $(document).on('click', '.js-popup-closer', function () {
   $('.popup-shade').fadeOut();
   return false;
 });
+
+$(document).ready(function () {
+  if ($('.js-price-slider').length) {
+    var min = 72000;
+    var max = 3300300;
+    $(".js-price-slider").ionRangeSlider({
+      skin: "round",
+      type: "double",
+      min: min,
+      max: max,
+      from: min,
+      to: max,
+      grid: false,
+      hide_min_max: true,
+      onChange: function (data) {
+        $('#min_price').val(data.from_pretty);
+        $('#max_price').val(data.to_pretty);
+      }
+    });
+
+    var price_range = $(".js-price-slider").data("ionRangeSlider");
+
+    $('#min_price, #max_price').on('change', function() {
+      price_range.update({
+        from: $('#min_price').val(),
+          to: $('#max_price').val()
+      });
+
+      if($('#min_price').val() < min ) {
+        price_range.update({
+          from: $('#min_price').val(min)
+        });
+      }
+
+      if($('#max_price').val() < min ) {
+        price_range.update({
+          from: $('#max_price').val(min)
+        });
+      }
+
+      if($('#max_price').val() > max ) {
+        price_range.update({
+          from: $('#max_price').val(max)
+        });
+      }
+    });
+  }
+});
