@@ -235,3 +235,8 @@ $(document).ready(function () {
     });
   }
 });
+
+$(document).on('click', '.js-price-reset', function () {
+  $('.reset-popup').toggleClass('is-active');
+  return false;
+});

@@ -594,6 +594,28 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="mods__additionals-block">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Новинка
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Хит продаж
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Акции
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    fps 60+
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -601,7 +623,7 @@
         </div>
 
         <div class="price">
-            <button class="price__reset" type="button" title="Сбросить">
+            <button class="js-price-reset price__reset" type="button" title="Сбросить">
                 <svg aria-hidden="true">
                     <use xlink:href="#reset" />
                 </svg>
@@ -609,7 +631,7 @@
             </button>
             <p class="config__subtitle"><span class="config__subtitle-num">4</span> <span class="mobile">Настрой цену</span> <span class="desktop">Рассчитай стоимость</span></p>
             <div class="price__inner">
-                <button class="price__reset" type="button" title="Сбросить">
+                <button class="js-price-reset price__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
@@ -2657,7 +2679,17 @@
                     </form>
                 </div>
             </div>
+        </div>
 
+        <div class="reset-popup">
+            <ul>
+                <li>Подобранные варианты конфигураций ПК соответствуют параметрам выбора и являются оптимальными.</li>
+                <li><b>Снижение цены приведет к сбросу фильтра для подбора по цене, либо к снижению показателей производительности и понижению уровня конфигураций.</b></li>
+            </ul>
+            <div class="reset-popup__buttons">
+                <button class="btn btn--type_2" type="button">Снизить FPS</button>
+                <button class="btn btn--type_2" type="button">Сбросить цену</button>
+            </div>
         </div>
     </div>
 </body>

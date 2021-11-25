@@ -250,7 +250,10 @@
             }
 
             &::before {
+                bottom: -16px;
                 border-top-color: #fff;
+                border-width: 10px;
+                margin-left: -10px;
             }
         }
     }
