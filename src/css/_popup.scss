@@ -42,6 +42,10 @@
         max-width: 980px;
     }
 
+    &--no_img_bg {
+        background-image: none !important;
+    }
+
     &__close {
         align-items: center;
         background-color: $main_color;
@@ -95,6 +99,17 @@
         text-align: center;
         @media(min-width: $hd) {
             margin-bottom: 32px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .btn {
+            margin-left: 12px;
+            margin-right: 12px;
         }
     }
 }

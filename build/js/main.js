@@ -204,6 +204,7 @@ $(document).ready(function () {
       onChange: function (data) {
         $('#min_price').val(data.from_pretty);
         $('#max_price').val(data.to_pretty);
+        $('.popup-shade').fadeIn();
       }
     });
 

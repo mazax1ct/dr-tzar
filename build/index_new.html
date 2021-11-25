@@ -69,7 +69,7 @@
                 </svg>
                 <span>Сбросить</span>
             </button>
-            <p class="js-params-toggler config__subtitle">
+            <p class="config__subtitle">
                 <span class="config__subtitle-num">1</span>
                 <span class="config__subtitle-container">
                     Укажи задачи и параметры
@@ -81,7 +81,7 @@
                 </span>
             </p>
             <div class="params__inner">
-                <button class="params__reset" type="button" title="Сбросить">
+                <button class="js-popup-opener params__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
@@ -629,7 +629,7 @@
                 </svg>
                 <span>Сбросить</span>
             </button>
-            <p class="config__subtitle"><span class="config__subtitle-num">4</span> <span class="mobile">Настрой цену</span> <span class="desktop">Рассчитай стоимость</span></p>
+            <p class="config__subtitle"><span class="config__subtitle-num">4</span> Диапазон цен</p>
             <div class="price__inner">
                 <button class="js-price-reset price__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
@@ -2637,46 +2637,20 @@
 
         <div class="popup-shade">
             <div class="popup-shade__inner">
-                <div class="popup">
+                <div class="popup popup--no_img_bg">
                     <button class="js-popup-closer popup__close" type="button" title="Закрыть">
                         <svg aria-hidden="true">
                             <use xlink:href="#close" />
                         </svg>
                     </button>
-                    <p class="popup__title">ПОМОЩЬ В ВЫБОРЕ</p>
-                    <p class="popup__text">Наши сотрудники свяжутся с Вами в течении 30 минут в рабочее время с 9:30 до 20:00</p>
-
-                    <form class="help-form" action="" method="">
-                        <div class="help-form__row">
-                            <div class="help-form__row-cell">
-                                <label class="help-form__label">
-                                    <input class="input error" type="text" name="" value="" placeholder="ФИО">
-                                </label>
-                                <label class="help-form__label">
-                                    <input class="input" type="text" value="" placeholder="Телефон">
-                                </label>
-                            </div>
-                            <div class="help-form__row-cell">
-                                <label class="help-form__label">
-                                    <input class="input" type="text" name="" value="" placeholder="Email">
-                                </label>
-                                <label class="help-form__label">
-                                    <input class="input" type="text" value="" placeholder="Компания">
-                                </label>
-                            </div>
-                        </div>
-                        <label class="help-form__textarea-label">
-                            <textarea class="textarea" placeholder="Опишите здесь задачи и пожелания"></textarea>
-                        </label>
-                        <div class="help-form__captcha">
-                            <div style="min-height: 78px; margin-left: auto; margin-right: auto; max-width: 304px" id="g-recaptchaSELECTOR_FPS_FORM">
-                                капча
-                            </div>
-                        </div>
-                        <div class="help-form__button-block">
-                            <button class="btn" type="submit" disabled>Отправить</button>
-                        </div>
-                    </form>
+                    <p class="popup__text">
+                        Подобранные варианты конфигураций ПК соответствуют параметрам выбора и являются оптимальными.<br><br>
+                        <b>Снижение цены приведет к сбросу фильтра для подбора по цене, либо к снижению показателей производительности и понижению уровня конфигураций.</b>
+                    </p>
+                    <div class="popup__buttons">
+                        <button class="btn btn--type_2" type="button">Снизить FPS</button>
+                        <button class="btn btn--type_2" type="button">Сбросить цену</button>
+                    </div>
                 </div>
             </div>
         </div>
