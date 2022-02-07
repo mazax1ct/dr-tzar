@@ -141,13 +141,13 @@ $(document).on('change', '.js-additional', function () {
 
 //открытие настроек в карточке
 $(document).on('click', '.js-card-settings-opener', function () {
-  $(this).next('.card__settings').addClass('is-open');
+  $(this).next('.card__settings, .card_2__settings').addClass('is-open');
   return false;
 });
 
 //закрытие настроек в карточке
 $(document).on('click', '.js-card-settings-closer', function () {
-  $(this).parent('.card__settings').removeClass('is-open');
+  $(this).parent('.card__settings, .card_2__settings').removeClass('is-open');
   return false;
 });
 
@@ -178,6 +178,9 @@ $(document).on('change', '.js-card-switch', function () {
 
 //открытие попапа
 $(document).on('click', '.js-popup-opener', function () {
+  var popup = $(this).attr('data-popup');
+  $('.popup').hide();
+  $('.' + popup).show();
   $('.popup-shade').fadeIn();
   return false;
 });
@@ -204,6 +207,8 @@ $(document).ready(function () {
       onChange: function (data) {
         $('#min_price').val(data.from_pretty);
         $('#max_price').val(data.to_pretty);
+        $('.popup-new').hide();
+        $('.js-popup-warning').show();
         $('.popup-shade').fadeIn();
       }
     });
