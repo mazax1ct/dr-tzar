@@ -252,3 +252,13 @@ $(document).on('click', '.js-reset-popup-close', function () {
   $('.reset-popup').toggleClass('is-active');
   return false;
 });
+
+/*удалить*/
+$(document).on('click', '.js-open-inner', function () {
+  var inner = $(this).attr('data-inner');
+  $(this).closest('.popup-new').find('.popup-new__inner').hide();
+  $('.popup-new__inner[data-inner='+inner+']').show();
+  return false;
+});
+
+/*удалить*/
