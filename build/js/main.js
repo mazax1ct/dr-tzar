@@ -188,6 +188,7 @@ $(document).on('click', '.js-popup-opener', function () {
 //закрытие попапа
 $(document).on('click', '.js-popup-closer', function () {
   $('.popup-shade').fadeOut();
+  $('.popup-new').hide();
   return false;
 });
 
@@ -243,6 +244,11 @@ $(document).ready(function () {
 });
 
 $(document).on('click', '.js-price-reset', function () {
+  $('.reset-popup').toggleClass('is-active');
+  return false;
+});
+
+$(document).on('click', '.js-reset-popup-close', function () {
   $('.reset-popup').toggleClass('is-active');
   return false;
 });

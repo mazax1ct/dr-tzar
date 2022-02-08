@@ -8,7 +8,7 @@
     font-size: 14px;
     line-height: 1.5;
     left: auto;
-    max-width: 592px;
+    max-width: 350px;
     position: fixed;
     padding: 24px;
     right: 0;
@@ -18,12 +18,35 @@
     z-index: 10;
     @media(min-width: $sm) {
         font-size: 16px;
+        max-width: 592px;
         padding: 24px 36px 24px 48px;
     }
 
     &.is-active {
         box-shadow: 0 4px 36px 0 $main_color;
         transform: translateX(0);
+    }
+
+    &__close {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        left: auto;
+        position: absolute;
+        padding: 0;
+        right: 6px;
+        top: 0;
+        width: 32px;
+
+        svg {
+            fill: #fff;
+            height: 32px;
+            width: 32px;
+        }
     }
 
     ul {
@@ -39,6 +62,13 @@
         display: flex;
 
         .btn {
+            padding-left: 16px;
+            padding-right: 16px;
+            @media(min-width: $sm) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
             &:not(:last-child) {
                 margin-right: 24px;
             }

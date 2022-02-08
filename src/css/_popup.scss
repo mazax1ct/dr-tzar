@@ -481,4 +481,52 @@
             min-width: 172px;
         }
     }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.33333;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 345px;
+        margin-bottom: 40px;
+        @media(min-width: $sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__text-bullet {
+        padding-left: 24px;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &::before {
+            content: '•';
+            left: 12px;
+            position: absolute;
+            top: 0.05em;
+        }
+    }
+
+    &__buttons_2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .btn {
+            margin-bottom: 6px;
+            margin-left: 6px;
+            margin-right: 6px;
+            min-width: 120px;
+            padding-left: 8px;
+            padding-right: 8px;
+            @media(min-width: $sm) {
+                min-width: 168px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
 }

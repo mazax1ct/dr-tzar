@@ -33,7 +33,7 @@
                 </svg>
                 <span>Сбросить</span>
             </button>
-            <p class="config__subtitle">
+            <p class="js-params-toggler config__subtitle">
                 <span class="config__subtitle-num">1</span>
                 <span class="config__subtitle-container">
                     Укажи задачи и параметры
@@ -45,7 +45,7 @@
                 </span>
             </p>
             <div class="params__inner">
-                <button class="js-popup-opener params__reset" type="button" title="Сбросить">
+                <button class="js-price-reset params__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
@@ -631,19 +631,21 @@
 
         <div class="popup-shade">
             <div class="popup-shade__inner">
-                <div class="js-popup-warning popup popup--no_img_bg">
-                    <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                <div class="js-popup-warning popup-new">
+                    <button class="js-popup-closer popup-new__close" type="button" title="Закрыть">
                         <svg aria-hidden="true">
-                            <use xlink:href="#close" />
+                            <use xlink:href="#new_close" />
                         </svg>
                     </button>
-                    <p class="popup__text">
-                        Подобранные варианты конфигураций ПК соответствуют параметрам выбора и являются оптимальными.<br><br>
-                        <b>Снижение цены приведет к сбросу фильтра для подбора по цене, либо к снижению показателей производительности и понижению уровня конфигураций.</b>
-                    </p>
-                    <div class="popup__buttons">
-                        <button class="btn btn--type_2" type="button">Снизить FPS</button>
-                        <button class="btn btn--type_2" type="button">Сбросить цену</button>
+                    <div class="popup-new__inner popup-new__inner--type_2">
+                        <div class="popup-new__text">
+                            <p class="popup-new__text-bullet">Подобранные варианты конфигураций ПК соответствуют параметрам выбора и являются оптимальными.</p>
+                            <p class="popup-new__text-bullet"><b>Снижение цены приведет к сбросу фильтра для подбора по цене, либо к снижению показателей производительности и понижению уровня конфигураций.</b></p>
+                        </div>
+                        <div class="popup-new__buttons_2">
+                            <button class="btn btn--type_2" type="button">Снизить FPS</button>
+                            <button class="btn btn--type_2" type="button">Сбросить цену</button>
+                        </div>
                     </div>
                 </div>
 
