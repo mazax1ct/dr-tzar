@@ -188,7 +188,7 @@ $(document).on('click', '.js-popup-opener', function () {
 //закрытие попапа
 $(document).on('click', '.js-popup-closer', function () {
   $('.popup-shade').fadeOut();
-  $('.popup-new').hide();
+  $('.popup').hide();
   return false;
 });
 
@@ -208,7 +208,7 @@ $(document).ready(function () {
       onChange: function (data) {
         $('#min_price').val(data.from_pretty);
         $('#max_price').val(data.to_pretty);
-        $('.popup-new').hide();
+        $('.popup').hide();
         $('.js-popup-warning').show();
         $('.popup-shade').fadeIn();
       }
@@ -256,8 +256,8 @@ $(document).on('click', '.js-reset-popup-close', function () {
 /*удалить*/
 $(document).on('click', '.js-open-inner', function () {
   var inner = $(this).attr('data-inner');
-  $(this).closest('.popup-new').find('.popup-new__inner').hide();
-  $('.popup-new__inner[data-inner='+inner+']').show();
+  $(this).closest('.popup').find('.popup__inner').hide();
+  $('.popup__inner[data-inner='+inner+']').show();
   return false;
 });
 

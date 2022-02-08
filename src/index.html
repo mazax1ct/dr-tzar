@@ -36,7 +36,7 @@
             <p class="js-params-toggler config__subtitle">
                 <span class="config__subtitle-num">1</span>
                 <span class="config__subtitle-container">
-                    настрой параметры конфигурации
+                    Укажи задачи и параметры
                     <span class="config__subtitle-button">
                         <svg aria-hidden="true">
                             <use xlink:href="#arrow_down" />
@@ -45,7 +45,7 @@
                 </span>
             </p>
             <div class="params__inner">
-                <button class="params__reset" type="button" title="Сбросить">
+                <button class="js-price-reset params__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
@@ -147,7 +147,7 @@
         </div>
 
         <div class="games">
-            <p class="config__subtitle"><span class="config__subtitle-num">2</span> выбери 5 игр</p>
+            <p class="config__subtitle"><span class="config__subtitle-num">2</span> В какие игры играешь</p>
             <div class="games__filter-block">
                 <button class="js-filter-opener games__filter-togler" type="button">
                     <svg aria-hidden="true">
@@ -320,7 +320,7 @@
             </div>
 
             <div class="games__games-block">
-                <p class="games__games-block-title">Твои игры</p>
+                <p class="games__games-block-title">выбранные игры</p>
                 <div class="games__list">
                     <div class="games__list-item">
                         <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')" title="Удалить">
@@ -367,7 +367,7 @@
             <p class="js-mods-toggler config__subtitle">
                 <span class="config__subtitle-num">3</span>
                 <span class="config__subtitle-container">
-                    выбери моды
+                    параметры конфигурации
                     <span class="config__subtitle-button">
                         <svg aria-hidden="true">
                             <use xlink:href="#arrow_down" />
@@ -375,14 +375,14 @@
                     </span>
                 </span>
             </p>
-            <div class="mods__inner">
+            <div class="mods__inner mods__inner--type_1">
                 <button class="mods__reset" type="button" title="Сбросить">
                     <svg aria-hidden="true">
                         <use xlink:href="#reset" />
                     </svg>
                     <span>Сбросить</span>
                 </button>
-                <div class="mods__container mods__container--type_1">
+                <div class="mods__container mods__container--type_2">
                     <div class="mods__block">
                         <p class="mods__block-title">
                             <span class="info">
@@ -397,23 +397,24 @@
                                     similique esse odit.
                                 </span>
                             </span>
-                            Выбери тип охлаждения
+                            Процессор
                         </p>
                         <div class="btns-group">
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="1">
-                                <span class="btns-group__item-inner">Водяное</span>
+                                <input type="checkbox" name="cpu" value="1">
+                                <span class="btns-group__item-inner">AMD</span>
                             </label>
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="2">
-                                <span class="btns-group__item-inner">Воздух</span>
+                                <input type="checkbox" name="cpu" value="2">
+                                <span class="btns-group__item-inner">INTEL</span>
                             </label>
                             <label class="btns-group__item">
-                                <input type="checkbox" name="cooling" value="3">
-                                <span class="btns-group__item-inner">Кастом</span>
+                                <input type="checkbox" name="cpu" value="3">
+                                <span class="btns-group__item-inner">Автовыбор</span>
                             </label>
                         </div>
                     </div>
+
                     <div class="mods__block">
                         <p class="mods__block-title">
                             <span class="info">
@@ -428,71 +429,42 @@
                                     similique esse odit.
                                 </span>
                             </span>
-                            Дополнительные параметры
+                            Видеокарта
                         </p>
+                        <div class="btns-group">
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="1">
+                                <span class="btns-group__item-inner">AMD</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="2">
+                                <span class="btns-group__item-inner">NVIDIA</span>
+                            </label>
+                            <label class="btns-group__item">
+                                <input type="checkbox" name="gpu" value="3">
+                                <span class="btns-group__item-inner">Автовыбор</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mods__block mods__block--type_1">
                         <div class="mods__switches">
                             <label class="switch">
-                                <input type="checkbox">
+                                <input class="js-series" type="checkbox">
                                 <span class="switch__icon"></span>
-                                Бесшумный
+                                Специальные<br> серии
                             </label>
                             <label class="switch">
-                                <input type="checkbox">
+                                <input class="js-additional" type="checkbox">
                                 <span class="switch__icon"></span>
-                                подсветка
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                компактный<br> компьютер
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                С&nbsp;разворотом<br> видеокарты
+                                <span>
+                                    <span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>
+                                    опции
+                                </span>
                             </label>
                         </div>
                     </div>
-                    <div class="mods__block">
-                        <p class="mods__block-title">ПЛАТФОРМА</p>
-                        <p class="mods__block-subtitle">Процессор</p>
-                        <div class="radio-group">
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="1">
-                                <span class="radio-group__item-inner">AMD</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="2">
-                                <span class="radio-group__item-inner">INTEL</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="cpu" value="3" checked>
-                                <span class="radio-group__item-inner">Не выбрано</span>
-                            </label>
-                        </div>
-                        <p class="mods__block-subtitle">Видеокарта</p>
-                        <div class="radio-group">
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="1">
-                                <span class="radio-group__item-inner">AMD</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="2">
-                                <span class="radio-group__item-inner">Nvidia</span>
-                            </label>
-                            <label class="radio-group__item">
-                                <input type="radio" name="gpu" value="3" checked>
-                                <span class="radio-group__item-inner">Не выбрано</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mods__block">
-                        <label class="switch">
-                            <input class="js-series" type="checkbox">
-                            <span class="switch__icon"></span>
-                            Специальные<br> серии
-                        </label>
-                    </div>
+
                     <div class="mods__block mods__brands">
                         <p class="mods__brands-title">Бренды</p>
                         <div class="brands">
@@ -528,915 +500,270 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mods__block mods__additionals">
+                        <p class="mods__brands-title"><span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>опции</p>
+                        <div class="mods__additionals-inner">
+                            <div class="mods__additionals-block">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Бесшумный
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Подсветка
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Компактный<br> компьютер
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    С разворотом<br> выдеокарты
+                                </label>
+                            </div>
+                            <div class="mods__additionals-block">
+                                <p class="mods__block-title">
+                                    <span class="info">
+                                        <button class="info__button" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#info" />
+                                            </svg>
+                                        </button>
+                                        <span class="info__popover">
+                                            <span><span></span></span>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
+                                            repellat
+                                            similique esse odit.
+                                        </span>
+                                    </span>
+                                    <span><span class="desktop">Выбери </span>тип охлаждения</span>
+                                </p>
+                                <div class="btns-group">
+                                    <label class="btns-group__item">
+                                        <input type="checkbox" name="air" value="1">
+                                        <span class="btns-group__item-inner">Водяное</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="checkbox" name="air" value="2">
+                                        <span class="btns-group__item-inner">Воздух</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="checkbox" name="air" value="3">
+                                        <span class="btns-group__item-inner">Кастом</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mods__additionals-block">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Новинка
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Хит продаж
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    Акции
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="switch__icon"></span>
+                                    fps 60+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="cards /*cards--no_cards*/">
-            <div class="js-configs-slider configs-slider swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="configs-slider__slide swiper-slide">
-                        <div class="card">
-                            <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#reset" />
-                                    </svg>
-                                    <span>Сбросить</span>
-                                </button>
-                                <p class="card__title card__title--no_price">digitalrazor M</p>
-                                <p class="card__label">Новинка</p>
-                                <div class="card__slider-block">
-                                    <div class="card__slider is-active visible animated">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__switch-block">
-                                    <label class="card__switch">
-                                        <input class="js-card-switch" type="checkbox" name="design" value="">
-                                        <span class="card__switch-switch"></span>
-                                        <span class="card__switch-text">Дизайн</span>
-                                        <span class="card__switch-text">Цвет</span>
-                                    </label>
-                                    <div class="card__switch-radios-container">
-                                        <div class="card__switch-radios is-active visible animated">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="1" checked>
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="2">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="3">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="4">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="5">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="6">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="card__switch-radios">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="1" checked>
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="2">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="3">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="4">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="5">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="6">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__bottom">
-                                <div class="card__info">
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">i7-11700</p>
-                                        <p>Intel Core<br> 8 ядер / 16 потока</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">RTX 3060 Ti 8GB</p>
-                                        <p>NVIDIA GeForce Ampere</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">240Gb M.2</p>
-                                        <p>W/R: 350/500 Мб/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">16GB 3000Mhz</p>
-                                        <p>2 x 8Gb DDR4 Black</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">2TB Barracuda</p>
-                                        <p>Игровой HDD<br> W/R: 195/195МБ/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">1 год</p>
-                                        <p>Гарантия</p>
-                                    </div>
-                                </div>
-                                <div class="card__graphs">
-                                    <div class="card__graphs-title">
-                                        Производительность
-                                        <div class="card__settings-block">
-                                            <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#gear" />
-                                                </svg>
-                                            </button>
-                                            <div class="card__settings">
-                                                <button class="js-card-settings-closer card__settings-closer" type="button" title="Закрыть">
-                                                    <svg aria-hidden="true">
-                                                        <use xlink:href="#close" />
-                                                    </svg>
-                                                </button>
-                                                <p class="card__settings-title">Настройки</p>
-                                                <p class="card__settings-subtitle">разрешение монитора</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="1">
-                                                        <span class="btns-group__item-inner">FHD</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="2">
-                                                        <span class="btns-group__item-inner">2K</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="3">
-                                                        <span class="btns-group__item-inner">4K</span>
-                                                    </label>
-                                                </div>
-                                                <p class="card__settings-subtitle">Настройки графики</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="1">
-                                                        <span class="btns-group__item-inner">Standart</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="2">
-                                                        <span class="btns-group__item-inner">High</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="3">
-                                                        <span class="btns-group__item-inner">Max</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                </div>
-                                <div class="card__buttons">
-                                    <button class="js-popup-opener btn" type="button" data-popup="js-cosultation">Консультация</button>
-                                    <a class="btn btn--type_2" href="#">Конфигуратор</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="price">
+            <button class="js-price-reset price__reset" type="button" title="Сбросить">
+                <svg aria-hidden="true">
+                    <use xlink:href="#reset" />
+                </svg>
+                <span>Сбросить</span>
+            </button>
+            <p class="config__subtitle"><span class="config__subtitle-num">4</span> Диапазон цен</p>
+            <div class="price__inner">
+                <button class="js-price-reset price__reset" type="button" title="Сбросить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#reset" />
+                    </svg>
+                    <span>Сбросить</span>
+                </button>
+                <div class="price__slider-block">
+                    <div class="price__slider-min">
+                        <p class="price__slider-min-max-label">Мин. цена</p>
+                        <p class="price__slider-min-max-price">72 300 ₽</p>
                     </div>
-                    <div class="configs-slider__slide swiper-slide">
-                        <div class="card">
-                            <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#reset" />
-                                    </svg>
-                                    <span>Сбросить</span>
-                                </button>
-                                <p class="card__title">digitalrazor M</p>
-                                <p class="card__price">441 300 ₽</p>
-                                <div class="card__slider-block">
-                                    <div class="card__slider is-active visible animated">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__switch-block">
-                                    <label class="card__switch">
-                                        <input class="js-card-switch" type="checkbox" name="design" value="">
-                                        <span class="card__switch-switch"></span>
-                                        <span class="card__switch-text">Дизайн</span>
-                                        <span class="card__switch-text">Цвет</span>
-                                    </label>
-                                    <div class="card__switch-radios-container">
-                                        <div class="card__switch-radios is-active visible animated">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="1" checked>
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="2">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="3">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="4">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="5">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="6">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="card__switch-radios">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="1" checked>
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="2">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="3">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="4">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="5">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="6">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__bottom">
-                                <div class="card__info">
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">R9 5900X</p>
-                                        <p>AMD Ryzen<br> 12 ядер / 24 потока</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">6800 16GB</p>
-                                        <p>AMD Radeon</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">240Gb M.2</p>
-                                        <p>W/R: 350/500 Мб/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">16GB 3000Mhz</p>
-                                        <p>2 x 8Gb DDR4 Black</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">2TB Barracuda</p>
-                                        <p>Игровой HDD<br> W/R: 195/195МБ/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title card__info-title--red">1 год</p>
-                                        <p>Гарантия</p>
-                                    </div>
-                                </div>
-                                <div class="card__graphs">
-                                    <div class="card__graphs-title">
-                                        Производительность
-                                        <div class="card__settings-block">
-                                            <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#gear" />
-                                                </svg>
-                                            </button>
-                                            <div class="card__settings">
-                                                <button class="js-card-settings-closer card__settings-closer" type="button" title="Закрыть">
-                                                    <svg aria-hidden="true">
-                                                        <use xlink:href="#close" />
-                                                    </svg>
-                                                </button>
-                                                <p class="card__settings-title">Настройки</p>
-                                                <p class="card__settings-subtitle">разрешение монитора</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="1">
-                                                        <span class="btns-group__item-inner">FHD</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="2">
-                                                        <span class="btns-group__item-inner">2K</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="3">
-                                                        <span class="btns-group__item-inner">4K</span>
-                                                    </label>
-                                                </div>
-                                                <p class="card__settings-subtitle">Настройки графики</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="1">
-                                                        <span class="btns-group__item-inner">Standart</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="2">
-                                                        <span class="btns-group__item-inner">High</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="3">
-                                                        <span class="btns-group__item-inner">Max</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image graph__image--red" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph graph__graph--red"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image graph__image--red" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph graph__graph--red"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image graph__image--red" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph graph__graph--red"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image graph__image--red" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph graph__graph--red"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image graph__image--red" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph graph__graph--red"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="btn" href="#">Конфигуратор</a>
-                                    <a class="btn btn--type_2" href="#">Купить</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="price__slider">
+                        <input type="text" class="js-price-slider" name="my_range" value="" />
                     </div>
-                    <div class="configs-slider__slide swiper-slide">
-                        <div class="card">
-                            <div class="card__top">
-                                <button class="card__reset" type="button" title="Сбросить">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#reset" />
-                                    </svg>
-                                    <span>Сбросить</span>
-                                </button>
-                                <p class="card__title">digitalrazor M</p>
-                                <p class="card__price">441 300 ₽</p>
-                                <div class="card__slider-block">
-                                    <div class="card__slider is-active visible animated">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp.png" srcset="images/content/comp@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider">
-                                        <div class="js-design-slider swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/content/comp_2.png" srcset="images/content/comp_2@2x.png 2x" alt="alt">
-                                                </div>
-                                            </div>
-                                            <button class="swiper-button-prev" type="button" title="Назад">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_left" />
-                                                </svg>
-                                            </button>
-                                            <button class="swiper-button-next" type="button" title="Вперёд">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#arrow_right" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__switch-block">
-                                    <label class="card__switch">
-                                        <input class="js-card-switch" type="checkbox" name="design" value="">
-                                        <span class="card__switch-switch"></span>
-                                        <span class="card__switch-text">Дизайн</span>
-                                        <span class="card__switch-text">Цвет</span>
-                                    </label>
-                                    <div class="card__switch-radios-container">
-                                        <div class="card__switch-radios is-active visible animated">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="1" checked>
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="2">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="3">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="4">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="5">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__design">
-                                                    <input type="radio" name="design" value="6">
-                                                    <span class="card__design-inner">
-                                                        <img src="images/content/design.jpg" srcset="images/content/design@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="card__switch-radios">
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="1" checked>
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="2">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="3">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="4">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_1.jpg" srcset="images/content/color_1@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="5">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_2.jpg" srcset="images/content/color_2@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="card__switch-radios-item">
-                                                <label class="card__color">
-                                                    <input type="radio" name="color" value="6">
-                                                    <span class="card__color-inner">
-                                                        <img src="images/content/color_3.jpg" srcset="images/content/color_3@2x.jpg 2x" alt="alt">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__bottom">
-                                <div class="card__info">
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">i7-11700</p>
-                                        <p>Intel Core<br> 8 ядер / 16 потока</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">RTX 3060 Ti 8GB</p>
-                                        <p>NVIDIA GeForce Ampere</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">240Gb M.2</p>
-                                        <p>W/R: 350/500 Мб/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">16GB 3000Mhz</p>
-                                        <p>2 x 8Gb DDR4 Black</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">2TB Barracuda</p>
-                                        <p>Игровой HDD<br> W/R: 195/195МБ/с</p>
-                                    </div>
-                                    <div class="card__info-block">
-                                        <p class="card__info-title">1 год</p>
-                                        <p>Гарантия</p>
-                                    </div>
-                                </div>
-                                <div class="card__graphs">
-                                    <div class="card__graphs-title">
-                                        Производительность
-                                        <div class="card__settings-block">
-                                            <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="#gear" />
-                                                </svg>
-                                            </button>
-                                            <div class="card__settings">
-                                                <button class="js-card-settings-closer card__settings-closer" type="button" title="Закрыть">
-                                                    <svg aria-hidden="true">
-                                                        <use xlink:href="#close" />
-                                                    </svg>
-                                                </button>
-                                                <p class="card__settings-title">Настройки</p>
-                                                <p class="card__settings-subtitle">разрешение монитора</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="1">
-                                                        <span class="btns-group__item-inner">FHD</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="2">
-                                                        <span class="btns-group__item-inner">2K</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="res" value="3">
-                                                        <span class="btns-group__item-inner">4K</span>
-                                                    </label>
-                                                </div>
-                                                <p class="card__settings-subtitle">Настройки графики</p>
-                                                <div class="btns-group">
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="1">
-                                                        <span class="btns-group__item-inner">Standart</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="2">
-                                                        <span class="btns-group__item-inner">High</span>
-                                                    </label>
-                                                    <label class="btns-group__item">
-                                                        <input type="checkbox" name="graphics" value="3">
-                                                        <span class="btns-group__item-inner">Max</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                    <div class="graph">
-                                        <img class="graph__image" src="images/content/game_6.jpg" srcset="images/content/game_6@2x.jpg 2x" alt="alt">
-                                        <div class="graph__graph"><span>100 <small>FPS</small></span></div>
-                                    </div>
-                                </div>
-                                <div class="card__buttons">
-                                    <button class="js-popup-opener btn" type="button" data-popup="js-cosultation">Консультация</button>
-                                    <a class="btn btn--type_2" href="#">Конфигуратор</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="price__slider-max">
+                        <p class="price__slider-min-max-label">Макс. цена</p>
+                        <p class="price__slider-min-max-price">3 300 300 ₽</p>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="price__inputs">
+                    <label class="price__input-block">
+                        <span class="price__input-before">От</span>
+                        <input id="min_price" class="price__input" type="text" value="72 000">
+                    </label>
+                    <label class="price__input-block">
+                        <span class="price__input-before">До</span>
+                        <input id="max_price" class="price__input" type="text" value="3 300 300">
+                    </label>
+                </div>
             </div>
-            <button class="js-configs-prev swiper-button-prev" type="button" title="Назад">
-                <svg aria-hidden="true">
-                    <use xlink:href="#arrow_left" />
-                </svg>
-            </button>
-            <button class="js-configs-next swiper-button-next" type="button" title="Вперёд">
-                <svg aria-hidden="true">
-                    <use xlink:href="#arrow_right" />
-                </svg>
-            </button>
-            <!--<p>ничего не нашлось</p>
-            <img width="285" height="253" src="images/icons/no_items.svg" alt="">-->
         </div>
+
+        //= template/cards.html
 
         <div class="popup-shade">
             <div class="popup-shade__inner">
-                <div class="js-cosultation popup">
+                <div class="js-popup-warning popup">
                     <button class="js-popup-closer popup__close" type="button" title="Закрыть">
                         <svg aria-hidden="true">
-                            <use xlink:href="#close" />
+                            <use xlink:href="#new_close" />
                         </svg>
                     </button>
-                    <p class="popup__title">ПОМОЩЬ В ВЫБОРЕ</p>
-                    <p class="popup__text">Наши сотрудники свяжутся с Вами в течении 30 минут в рабочее время с 9:30 до 20:00</p>
+                    <div class="popup__inner popup__inner--type_2">
+                        <div class="popup__text">
+                            <p class="popup__text-bullet">Подобранные варианты конфигураций ПК соответствуют параметрам выбора и являются оптимальными.</p>
+                            <p class="popup__text-bullet"><b>Снижение цены приведет к сбросу фильтра для подбора по цене, либо к снижению показателей производительности и понижению уровня конфигураций.</b></p>
+                        </div>
+                        <div class="popup__buttons_2">
+                            <button class="btn btn--type_2" type="button">Снизить FPS</button>
+                            <button class="btn btn--type_2" type="button">Сбросить цену</button>
+                        </div>
+                    </div>
+                </div>
 
-                    <form class="help-form" action="" method="">
-                        <div class="help-form__row">
-                            <div class="help-form__row-cell">
-                                <label class="help-form__label">
-                                    <input class="input error" type="text" name="" value="" placeholder="ФИО">
-                                </label>
-                                <label class="help-form__label">
-                                    <input class="input" type="text" value="" placeholder="Телефон">
-                                </label>
+                <div class="js-popup-dialog popup">
+                    <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#new_close" />
+                        </svg>
+                    </button>
+
+                    <div class="popup__inner popup__inner--type_2">
+                        <p class="popup__title">Как удобнее<br> совершить покупку?</p>
+
+                        <div class="popup__buttons">
+                            <div class="popup__buttons-col">
+                                <a class="popup__button" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#add_cart" />
+                                    </svg>
+                                    В корзину
+                                </a>
+                                <div class="popup__button-note">Отправить товар<br> в корзину</div>
                             </div>
-                            <div class="help-form__row-cell">
-                                <label class="help-form__label">
-                                    <input class="input" type="text" name="" value="" placeholder="Email">
-                                </label>
-                                <label class="help-form__label">
-                                    <input class="input" type="text" value="" placeholder="Компания">
-                                </label>
+                            <div class="popup__buttons-col">
+                                <a class="js-open-inner popup__button" href="#" data-inner="chats">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#chat" />
+                                    </svg>
+                                    Написать
+                                </a>
+                                <div class="popup__button-note">Наш менеджер<br> быстро вам ответит<br> в чате!</div>
+                            </div>
+                            <div class="popup__buttons-col">
+                                <a class="js-open-inner popup__button" href="#" data-inner="oneclick">Купить в 1 клик</a>
+                                <div class="popup__button-note">Отправьте нам свои<br> данные и мы вам<br> перезвоним!</div>
                             </div>
                         </div>
-                        <label class="help-form__textarea-label">
-                            <textarea class="textarea" placeholder="Опишите здесь задачи и пожелания"></textarea>
-                        </label>
-                        <div class="help-form__captcha">
-                            <div style="min-height: 78px; margin-left: auto; margin-right: auto; max-width: 304px" id="g-recaptchaSELECTOR_FPS_FORM">
-                                капча
+                    </div>
+
+                    <div class="popup__inner popup__inner--type_1" style="display:none" data-inner="oneclick">
+                        <p class="popup__title">Заполните форму</p>
+
+                        <form class="popup__form">
+                            <div class="popup__form-row">
+                                <label class="popup__label">
+                                    <span class="popup__label-text">Телефон*</span>
+                                    <input class="popup__input error" type="text" placeholder="+7-_ _ _ -_ _ _ -_ _-_ _">
+                                </label>
                             </div>
+                            <div class="popup__form-row">
+                                <label class="popup__label">
+                                    <span class="popup__label-text">ФИО Контактного лица*</span>
+                                    <input class="popup__input" type="text" placeholder="Петров Петр Петрович">
+                                </label>
+                            </div>
+                            <div class="popup__form-row">
+                                <img src="images/content/captcha.jpg" alt="">
+                            </div>
+                            <div class="popup__form-button">
+                                <button class="js-open-inner btn" type="submit" data-inner="success">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="popup__inner popup__inner--type_2" style="display:none" data-inner="chats">
+                        <p class="popup__title">Выберите удобный<br> месенджер</p>
+
+                        <div class="popup__socials">
+                            <a class="popup__social" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Название">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#inst" />
+                                </svg>
+                            </a>
+                            <a class="popup__social" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Название">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#circle" />
+                                </svg>
+                            </a>
+                            <a class="popup__social" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Название">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#tg" />
+                                </svg>
+                            </a>
+                            <a class="popup__social" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Название">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#wa" />
+                                </svg>
+                            </a>
+                            <a class="popup__social" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Название">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#chat" />
+                                </svg>
+                            </a>
                         </div>
-                        <div class="help-form__button-block">
-                            <button class="btn" type="submit" disabled>Отправить</button>
+                    </div>
+
+                    <div class="popup__inner popup__inner--type_3" style="display:none" data-inner="success">
+                        <div class="popup__success">
+                            <img src="images/icons/success.svg" alt="">
                         </div>
-                    </form>
+
+                        <p class="popup__title">Менеджер сейчас<br> свяжется с вами!</p>
+
+                        <div class="popup__form-button">
+                            <button class="btn btn--type_2 popup__ok" type="button">Ок</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+
+        //= template/reset-popup.html
     </div>
 </body>
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/main.js"></script>
 
 <script>
