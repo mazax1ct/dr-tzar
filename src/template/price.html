@@ -1,0 +1,40 @@
+<div class="price">
+    <button class="js-price-reset price__reset" type="button" title="Сбросить">
+        <svg aria-hidden="true">
+            <use xlink:href="#reset" />
+        </svg>
+        <span>Сбросить</span>
+    </button>
+    <p class="config__subtitle"><span class="config__subtitle-num">4</span> Диапазон цен</p>
+    <div class="price__inner">
+        <button class="js-price-reset price__reset" type="button" title="Сбросить">
+            <svg aria-hidden="true">
+                <use xlink:href="#reset" />
+            </svg>
+            <span>Сбросить</span>
+        </button>
+        <div class="price__slider-block">
+            <div class="price__slider-min">
+                <p class="price__slider-min-max-label">Мин. цена</p>
+                <p class="price__slider-min-max-price">72 300 ₽</p>
+            </div>
+            <div class="price__slider">
+                <input type="text" class="js-price-slider" name="my_range" value="" />
+            </div>
+            <div class="price__slider-max">
+                <p class="price__slider-min-max-label">Макс. цена</p>
+                <p class="price__slider-min-max-price">3 300 300 ₽</p>
+            </div>
+        </div>
+        <div class="price__inputs">
+            <label class="price__input-block">
+                <span class="price__input-before">От</span>
+                <input id="min_price" class="price__input" type="text" value="72 000">
+            </label>
+            <label class="price__input-block">
+                <span class="price__input-before">До</span>
+                <input id="max_price" class="price__input" type="text" value="3 300 300">
+            </label>
+        </div>
+    </div>
+</div>

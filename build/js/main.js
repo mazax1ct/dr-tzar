@@ -260,5 +260,50 @@ $(document).on('click', '.js-open-inner', function () {
   $('.popup__inner[data-inner='+inner+']').show();
   return false;
 });
-
 /*удалить*/
+
+//тоглер опций на мобилах
+$(document).on('click', '.js-options-toggler', function () {
+  if($('body').width() < 767) {
+    $(this).find('svg').toggleClass('rotate');
+    $(this).closest('.options').find('.options__inner').slideToggle();
+  }
+  return false;
+});
+
+//переключение опций
+$(document).on('click', '.options__card', function () {
+  if(!$(this).hasClass('is-active')) {
+    $('.options__card').removeClass('is-active');
+    $(this).addClass('is-active');
+
+    $('.options__dropdown').slideUp();
+    $('.options__dropdown[data-target="'+$(this).attr('data-target')+'"]').slideDown();
+  } else {
+    $('.options__dropdown').slideUp();
+    $('.options__card').removeClass('is-active');
+  }
+
+  return false;
+});
+
+//откртие доп блока в опциях
+$(document).on('click', '.js-add-opener', function () {
+  $('.options__add-block').addClass('is-open');
+  $('.options__add').addClass('is-open');
+  return false;
+});
+
+//закрытие доп блока в опциях
+$(document).on('click', '.js-add-closer', function () {
+  $('.options__add-block').removeClass('is-open');
+  $('.options__add').removeClass('is-open');
+  return false;
+});
+
+//переключение в списках опций
+$(document).on('click', '.options__dropdown-button', function () {
+  $(this).closest('.options__dropdown-list').find('.options__dropdown-button').removeClass('is-active');
+  $(this).addClass('is-active');
+  return false;
+});
