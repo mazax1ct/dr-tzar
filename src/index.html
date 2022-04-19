@@ -11,9 +11,26 @@
     <meta name="format-detection" content="telephone=no">
 
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         body {
             padding: 0;
             margin: 0;
+        }
+
+        .config {
+            height: 100%
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #fff
         }
     </style>
 
@@ -24,27 +41,23 @@
     <div class="config">
         //= template/sprite.html
 
-        <p class="config__title">Выбери конфигурацию</p>
+        <ul>
+            <li><a href="on_one_page.html" target="_blank">На одной странице</a></li>
 
-        //= template/params.html
+            <li><a href="by_tasks.html" target="_blank">Выбор по задачам</a></li>
 
-        //= template/games.html
+            <li><a href="by_params.html" target="_blank">Выбор по параметрам</a></li>
 
-        //= template/options.html
+            <li><a href="in_stock.html" target="_blank">Компьютеры в наличии</a></li>
 
-        //= template/price.html
+            <li><a href="in_stock.html" target="_blank">Компьютеры в наличии</a></li>
 
-        //= template/cards.html
+            <li><a href="ws_by_tasks.html" target="_blank">Рабочие станции - выбор по задачам</a></li>
 
-        <div class="popup-shade">
-            <div class="popup-shade__inner">
-                //= template/warning.html
+            <li><a href="ws_by_params.html" target="_blank">Рабочие станции - выбор по параметрам</a></li>
 
-                //= template/dialog.html
-            </div>
-        </div>
-
-        //= template/reset-popup.html
+            <li><a href="ws_in_stock.html" target="_blank">Рабочие станции - компьютеры в наличии</a></li>
+        </ul>
     </div>
 </body>
 
@@ -52,9 +65,5 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-
-</script>
 
 </html>

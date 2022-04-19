@@ -194,523 +194,113 @@
 
         <p class="config__title">Выбери конфигурацию</p>
 
-        <div class="params">
-            <button class="params__reset" type="button" title="Сбросить">
-                <svg aria-hidden="true">
-                    <use xlink:href="#reset" />
-                </svg>
-                <span>Сбросить</span>
-            </button>
-            <p class="js-params-toggler config__subtitle">
-                <span class="config__subtitle-num">1</span>
-                <span class="config__subtitle-container">
-                    Укажи задачи и параметры
-                    <span class="config__subtitle-button">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#arrow_down" />
-                        </svg>
-                    </span>
-                </span>
-            </p>
-            <div class="params__inner">
-                <button class="js-price-reset params__reset" type="button" title="Сбросить">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#reset" />
-                    </svg>
-                    <span>Сбросить</span>
-                </button>
-                <div class="params__block">
-                    <p class="params__block-title">
-                        <span class="info">
-                            <button class="info__button" type="button">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#info" />
-                                </svg>
-                            </button>
-                            <span class="info__popover">
-                                <span><span></span></span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                similique esse odit.
-                            </span>
-                        </span>
-                        разрешение монитора
-                    </p>
-                    <div class="btns-group">
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="res" value="1">
-                            <span class="btns-group__item-inner">FHD</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="res" value="2">
-                            <span class="btns-group__item-inner">2K</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="res" value="3">
-                            <span class="btns-group__item-inner">4K</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="params__block">
-                    <p class="params__block-title">
-                        <span class="info">
-                            <button class="info__button" type="button">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#info" />
-                                </svg>
-                            </button>
-                            <span class="info__popover">
-                                <span><span></span></span>
-                                Вы можете выбрать уровень настроек графики для игр, на которых обычно играете. Они влияют на детализацию изображения в игре и уровень FPS. Для требовательных игр на младших конфигурациях снижение настроек позволит
-                                получить более плавную картинку.
-                            </span>
-                        </span>
-                        настройки графики
-                    </p>
-                    <div class="btns-group">
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="graphics" value="1">
-                            <span class="btns-group__item-inner">Standart</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="graphics" value="2">
-                            <span class="btns-group__item-inner">High</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="graphics" value="3">
-                            <span class="btns-group__item-inner">Ultra</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="params__block">
-                    <p class="params__block-title">
-                        <span class="info">
-                            <button class="info__button" type="button">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#info" />
-                                </svg>
-                            </button>
-                            <span class="info__popover">
-                                <span><span></span></span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quo a quis possimus, neque magni. Quaerat dolorum beatae facere hic, in a nam laudantium et earum, voluptatibus, possimus facilis ex!
-                            </span>
-                        </span>
-                        дополнительные задачи
-                    </p>
-                    <div class="btns-group">
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="add" value="1">
-                            <span class="btns-group__item-inner">3D</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="add" value="2">
-                            <span class="btns-group__item-inner">Видеомонтаж</span>
-                        </label>
-                        <label class="btns-group__item">
-                            <input type="checkbox" name="add" value="3">
-                            <span class="btns-group__item-inner">Стриминг</span>
-                        </label>
-                    </div>
-                </div>
+        <div class="config__selection">
+            <div class="btns-group">
+                <label class="btns-group__item">
+                    <input type="radio" name="razvodka" value="1">
+                    <span class="btns-group__item-inner"><span class="desktop">Выбор по задачам</span> <span class="mobile">По задачам</span></span>
+                </label>
+                <label class="btns-group__item">
+                    <input type="radio" name="razvodka" value="2" checked>
+                    <span class="btns-group__item-inner"><span class="desktop">Выбор по параметрам</span> <span class="mobile">По параметрам</span></span>
+                </label>
+                <label class="btns-group__item">
+                    <input type="radio" name="razvodka" value="3">
+                    <span class="btns-group__item-inner"><span class="desktop">Компьютеры в наличии</span> <span class="mobile">В наличии</span></span>
+                </label>
             </div>
         </div>
 
-        <div class="games">
-            <p class="config__subtitle"><span class="config__subtitle-num">2</span> В какие игры играешь</p>
-            <div class="games__filter-block">
-                <button class="js-filter-opener games__filter-togler" type="button">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#filter" />
-                    </svg>
-                    Фильтр игр
-                </button>
-                <div class="games__filter filter">
-                    <button class="js-filter-closer filter__close" type="button" title="Закрыть">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#close" />
-                        </svg>
-                    </button>
-                    <div class="filter__inner">
-                        <div class="filter__block">
-                            <p class="filter__title">жанры</p>
-                            <div class="filter__checkboxes">
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Стратегия
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    РПГ
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Экшен
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Ужасы
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Инди
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Аркада
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Шутер
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Симулятор
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    <span class="checkbox__icon"></span>
-                                    Файтинг
-                                </label>
-                            </div>
-                        </div>
-                        <div class="filter__block">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                60+ FPS в играх
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                НОВИНКИ
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                игры с FSR
-                                <span class="info">
-                                    <button class="info__button" type="button">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#info" />
-                                        </svg>
-                                    </button>
-                                    <span class="info__popover">
-                                        <span><span></span></span>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
-                                        repellat
-                                        similique esse odit.
-                                    </span>
-                                </span>
-                            </label>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="switch__icon"></span>
-                                игры с DLSS
-                                <span class="info">
-                                    <button class="info__button" type="button">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#info" />
-                                        </svg>
-                                    </button>
-                                    <span class="info__popover">
-                                        <span><span></span></span>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
-                                        repellat
-                                        similique esse odit.
-                                    </span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <button class="filter__reset" type="button" title="Сбросить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#reset" />
-                        </svg>
-                        <span>Сбросить</span>
-                    </button>
-                </div>
-            </div>
-        
-            <div class="games__slider-block /*games__slider-block--no_games*/">
-                <div class="js-games-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_1.jpg" srcset="images/content/game_1@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_2.jpg" srcset="images/content/game_2@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_3.jpg" srcset="images/content/game_3@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_4.jpg" srcset="images/content/game_4@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_5.jpg" srcset="images/content/game_5@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_1.jpg" srcset="images/content/game_1@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_2.jpg" srcset="images/content/game_2@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_3.jpg" srcset="images/content/game_3@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_4.jpg" srcset="images/content/game_4@2x.jpg" alt="Название игры"></button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="games__game" type="button"><img src="images/content/game_5.jpg" srcset="images/content/game_5@2x.jpg" alt="Название игры"></button>
-                        </div>
-                    </div>
-                </div>
-                <button class="js-games-prev swiper-button-prev" type="button" title="Назад">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#arrow_left" />
-                    </svg>
-                </button>
-                <button class="js-games-next swiper-button-next" type="button" title="Вперёд">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#arrow_right" />
-                    </svg>
-                </button>
-                <!--<p>ничего не нашлось</p>
-                <img width="285" height="253" src="images/icons/no_items.svg" alt="">-->
-            </div>
-        
-            <div class="games__games-block">
-                <p class="games__games-block-title">выбранные игры</p>
-                <div class="games__list">
-                    <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_1.jpg')" title="Удалить">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#close" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_2.jpg')" title="Удалить">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#close" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_3.jpg')" title="Удалить">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#close" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="games__list-item">
-                        <button class="games__picked-game is-picked" type="button" style="background-image: url('images/content/game_4.jpg')" title="Удалить">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#close" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="games__list-item">
-                        <div class="games__picked-game"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mods">
-            <button class="mods__reset" type="button" title="Сбросить">
-                <svg aria-hidden="true">
-                    <use xlink:href="#reset" />
-                </svg>
-                <span>Сбросить</span>
-            </button>
-            <p class="js-mods-toggler config__subtitle">
-                <span class="config__subtitle-num">3</span>
-                <span class="config__subtitle-container">
-                    параметры конфигурации
-                    <span class="config__subtitle-button">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#arrow_down" />
-                        </svg>
-                    </span>
-                </span>
+        <div class="options options--type_1">
+            <p class="config__subtitle">
+                <span class="config__subtitle-container">параметры конфигурации</span>
             </p>
-            <div class="mods__inner mods__inner--type_1">
-                <button class="mods__reset" type="button" title="Сбросить">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#reset" />
-                    </svg>
-                    <span>Сбросить</span>
-                </button>
-                <div class="mods__container mods__container--type_2">
-                    <div class="mods__block">
-                        <p class="mods__block-title">
-                            <span class="info">
-                                <button class="info__button" type="button">
+
+            <div class="options__inner">
+                <ul class="options__cards-list">
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="1">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_1" />
+                            </svg>
+                            <span>На базе<br> процессора</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="2">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_2" />
+                            </svg>
+                            <span>На базе<br> видеокарты</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="3">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_3" />
+                            </svg>
+                            <span>На базе<br> корпуса</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="4">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_4" />
+                            </svg>
+                            <span>Брендовые<br> серии</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_5" />
+                            </svg>
+                            <span>Новинки</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_6" />
+                            </svg>
+                            <span>Акции</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="options__dropdown" data-target="1">
+
+                    <p class="options__dropdown-title">Выбери производителя</p>
+
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce" value="1" checked>
+                            <span class="btns-group__item-inner">AMD</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce" value="2">
+                            <span class="btns-group__item-inner">INTEL</span>
+                        </label>
+                    </div>
+
+                    <div class="options__dropdown-title-block">
+                        <p class="options__dropdown-title">Выбери процессор</p>
+                        <div class="options__add-block">
+                            <button class="js-add-opener options__add-opener options__add-opener--transparent" type="button" title="Дополнительно">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#gear" />
+                                </svg>
+                            </button>
+                            <div class="options__add options__add--type_2">
+                                <button class="js-add-closer options__add-closer" type="button" title="Закрыть">
                                     <svg aria-hidden="true">
-                                        <use xlink:href="#info" />
+                                        <use xlink:href="#new_close" />
                                     </svg>
                                 </button>
-                                <span class="info__popover">
-                                    <span><span></span></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                    similique esse odit.
-                                </span>
-                            </span>
-                            Процессор
-                        </p>
-                        <div class="btns-group">
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="1">
-                                <span class="btns-group__item-inner">AMD</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="2">
-                                <span class="btns-group__item-inner">INTEL</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="3">
-                                <span class="btns-group__item-inner">Автовыбор</span>
-                            </label>
-                        </div>
-                    </div>
-        
-                    <div class="mods__block">
-                        <p class="mods__block-title">
-                            <span class="info">
-                                <button class="info__button" type="button">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#info" />
-                                    </svg>
-                                </button>
-                                <span class="info__popover">
-                                    <span><span></span></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                    similique esse odit.
-                                </span>
-                            </span>
-                            Видеокарта
-                        </p>
-                        <div class="btns-group">
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="1">
-                                <span class="btns-group__item-inner">AMD</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="2">
-                                <span class="btns-group__item-inner">NVIDIA</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="3">
-                                <span class="btns-group__item-inner">Автовыбор</span>
-                            </label>
-                        </div>
-                    </div>
-        
-                    <div class="mods__block mods__block--type_1">
-                        <div class="mods__switches">
-                            <label class="switch">
-                                <input class="js-series" type="checkbox">
-                                <span class="switch__icon"></span>
-                                Специальные<br> серии
-                            </label>
-                            <label class="switch">
-                                <input class="js-additional" type="checkbox">
-                                <span class="switch__icon"></span>
-                                <span>
-                                    <span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>
-                                    опции
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-        
-                    <div class="mods__block mods__brands">
-                        <p class="mods__brands-title">Бренды</p>
-                        <div class="brands">
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_1.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_2.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_3.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_4.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_5.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="mods__block mods__additionals">
-                        <p class="mods__brands-title"><span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>опции</p>
-                        <div class="mods__additionals-inner">
-                            <div class="mods__additionals-block">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Бесшумный
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Подсветка
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Компактный<br> компьютер
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    С разворотом<br> выдеокарты
-                                </label>
-                            </div>
-                            <div class="mods__additionals-block">
-                                <p class="mods__block-title">
-                                    <span class="info">
-                                        <button class="info__button" type="button">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="#info" />
-                                            </svg>
-                                        </button>
-                                        <span class="info__popover">
-                                            <span><span></span></span>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
-                                            repellat
-                                            similique esse odit.
-                                        </span>
-                                    </span>
-                                    <span><span class="desktop">Выбери </span>тип охлаждения</span>
-                                </p>
+
+                                <p class="options__add-title-big">Дополнительно</p>
+
+                                <p class="options__add-title">Тип охлаждения</p>
+
                                 <div class="btns-group">
                                     <label class="btns-group__item">
                                         <input type="checkbox" name="air" value="1">
@@ -725,72 +315,371 @@
                                         <span class="btns-group__item-inner">Кастом</span>
                                     </label>
                                 </div>
-                            </div>
-                            <div class="mods__additionals-block">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Новинка
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Хит продаж
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Акции
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    fps 60+
-                                </label>
+
+                                <div class="options__add-switches options__add-switches--type_1">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        Бесшумный
+                                    </label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        хит продаж
+                                    </label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        Новинки
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="price">
-            <button class="js-price-reset price__reset" type="button" title="Сбросить">
-                <svg aria-hidden="true">
-                    <use xlink:href="#reset" />
-                </svg>
-                <span>Сбросить</span>
-            </button>
-            <p class="config__subtitle"><span class="config__subtitle-num">4</span> Диапазон цен</p>
-            <div class="price__inner">
-                <button class="js-price-reset price__reset" type="button" title="Сбросить">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#reset" />
-                    </svg>
-                    <span>Сбросить</span>
-                </button>
-                <div class="price__slider-block">
-                    <div class="price__slider-min">
-                        <p class="price__slider-min-max-label">Мин. цена</p>
-                        <p class="price__slider-min-max-price">72 300 ₽</p>
-                    </div>
-                    <div class="price__slider">
-                        <input type="text" class="js-price-slider" name="my_range" value="" />
-                    </div>
-                    <div class="price__slider-max">
-                        <p class="price__slider-min-max-label">Макс. цена</p>
-                        <p class="price__slider-min-max-price">3 300 300 ₽</p>
-                    </div>
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="price__inputs">
-                    <label class="price__input-block">
-                        <span class="price__input-before">От</span>
-                        <input id="min_price" class="price__input" type="text" value="72 000">
-                    </label>
-                    <label class="price__input-block">
-                        <span class="price__input-before">До</span>
-                        <input id="max_price" class="price__input" type="text" value="3 300 300">
-                    </label>
+
+                <div class="options__dropdown" data-target="2">
+                    <p class="options__dropdown-title">Выбери производителя</p>
+
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce_2" value="1" checked>
+                            <span class="btns-group__item-inner">AMD</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce_2" value="2">
+                            <span class="btns-group__item-inner">NVIDIA</span>
+                        </label>
+                    </div>
+
+                    <div class="options__dropdown-title-block">
+                        <p class="options__dropdown-title">Выбери видеокарту</p>
+                        <div class="options__add-block">
+                            <button class="js-add-opener options__add-opener options__add-opener--transparent" type="button" title="Дополнительно">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#gear" />
+                                </svg>
+                            </button>
+                            <div class="options__add options__add--type_2">
+                                <button class="js-add-closer options__add-closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#new_close" />
+                                    </svg>
+                                </button>
+
+                                <p class="options__add-title-big">Дополнительно</p>
+
+                                <div class="options__add-switches options__add-switches--type_1">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        хит продаж
+                                    </label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        Новинки
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="options__dropdown" data-target="3">
+
+                    <div class="options__dropdown-title-block">
+                        <p class="options__dropdown-title">Выбери корпус</p>
+                        <div class="options__add-block">
+                            <button class="js-add-opener options__add-opener options__add-opener--transparent" type="button" title="Дополнительно">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#gear" />
+                                </svg>
+                            </button>
+                            <div class="options__add options__add--type_2">
+                                <button class="js-add-closer options__add-closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#new_close" />
+                                    </svg>
+                                </button>
+
+                                <p class="options__add-title-big">Дополнительно</p>
+
+                                <div class="options__add-switches options__add-switches--type_1">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        компактный<br> компьютер
+                                    </label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        С разворотом<br> видеокарты
+                                    </label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__icon"></span>
+                                        Подсветка
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="options__dropdown" data-target="4">
+                    <p class="options__dropdown-title">Выбери бренд</p>
+                    <div class="brands">
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_1.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_2.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_3.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_4.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_5.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_1.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_2.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_3.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_4.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_5.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -890,7 +779,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1055,7 +944,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1220,7 +1109,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1385,7 +1274,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1550,7 +1439,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1715,7 +1604,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -1880,7 +1769,7 @@
                                 <div class="card__graphs-title">
                                     Производительность
                                     <div class="card__settings-block">
-                                        <button class="js-card-settings-opener card__settings-opener" type="button" title="Открыть настройки">
+                                        <button class="js-popup-opener card__settings-opener" type="button" data-popup="js-popup-test" title="Открыть настройки">
                                             <svg aria-hidden="true">
                                                 <use xlink:href="#gear" />
                                             </svg>
@@ -2083,6 +1972,663 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="js-popup-test popup popup--type_2">
+                    <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#new_close"></use>
+                        </svg>
+                    </button>
+                
+                    <p class="popup__big-title">Тесты</p>
+                
+                    <div class="tests-sections">
+                        <button class="js-tests tests-sections__button is-active" type="button" data-target="1">Игры</button>
+                        <button class="js-tests tests-sections__button" type="button" data-target="2">Синтетика</button>
+                        <button class="js-tests tests-sections__button" type="button" data-target="3">Создание контента</button>
+                    </div>
+                
+                    <div class="js-tests-section" data-target="1">
+                        <div class="tests-title-block">
+                            <p class="tests-title">Библиотека игр</p>
+                            <div class="tests-filter-block">
+                                <button class="js-tests-filter-opener tests-filter-opener" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="#filter"></use>
+                                    </svg>
+                                    Фильтр игр
+                                </button>
+                                <div class="tests-filter">
+                                    <button class="js-tests-filter-closer tests-filter__close" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#close" />
+                                        </svg>
+                                    </button>
+                                    <div class="tests-filter__inner">
+                                        <div class="tests-filter__block">
+                                            <p class="tests-filter__title">жанры</p>
+                                            <div class="tests-filter__checkboxes">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Стратегия
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    РПГ
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Экшен
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Ужасы
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Инди
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Аркада
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Шутер
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Симулятор
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__icon"></span>
+                                                    Файтинг
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tests-filter__block">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="switch__icon"></span>
+                                                60+ FPS в играх
+                                            </label>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="switch__icon"></span>
+                                                НОВИНКИ
+                                            </label>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="switch__icon"></span>
+                                                игры с FSR
+                                                <span class="info">
+                                                    <button class="info__button" type="button">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="#info" />
+                                                        </svg>
+                                                    </button>
+                                                    <span class="info__popover">
+                                                        <span><span></span></span>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
+                                                        repellat
+                                                        similique esse odit.
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="switch__icon"></span>
+                                                игры с DLSS
+                                                <span class="info">
+                                                    <button class="info__button" type="button">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="#info" />
+                                                        </svg>
+                                                    </button>
+                                                    <span class="info__popover">
+                                                        <span><span></span></span>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
+                                                        repellat
+                                                        similique esse odit.
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="tests-filter__reset" type="button" title="Сбросить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#reset" />
+                                        </svg>
+                                        <span>Сбросить</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="tests">
+                            <div class="js-tests-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1 is-active" type="button" title="Выбрано">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#arrow_left" />
+                                </svg>
+                            </button>
+                            <button class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
+                
+                        <p class="tests-title">Игры на графиках</p>
+                
+                        <div class="tests-sorter">
+                            <div class="tests-sorter__item">
+                                <div class="btns-group">
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="1" checked>
+                                        <span class="btns-group__item-inner">1080P</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="2" disabled>
+                                        <span class="btns-group__item-inner">2K</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="3">
+                                        <span class="btns-group__item-inner">4K</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="tests-sorter__item">
+                                <div class="btns-group">
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="quality" value="1" checked>
+                                        <span class="btns-group__item-inner">Standart</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="quality" value="2">
+                                        <span class="btns-group__item-inner">High</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="quality" value="3">
+                                        <span class="btns-group__item-inner">Ultra</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="tests">
+                            <div class="tests__list">
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <div class="test test--type_3" type="button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="js-tests-section" data-target="2" style="display:none">
+                        <p class="tests-title">Библиотека тестов</p>
+                
+                        <div class="tests">
+                            <div class="js-tests-slider-2 swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1 is-active" type="button" title="Выбрано">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button class="test test--type_1" type="button" title="Выбрать">
+                                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="#add"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#arrow_left" />
+                                </svg>
+                            </button>
+                            <button class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
+                
+                        <p class="tests-title">Синтетика на графиках</p>
+                
+                        <div class="tests-sorter">
+                            <div class="tests-sorter__item">
+                                <div class="btns-group">
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="1" checked>
+                                        <span class="btns-group__item-inner">1080P</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="2" disabled>
+                                        <span class="btns-group__item-inner">2K</span>
+                                    </label>
+                                    <label class="btns-group__item">
+                                        <input type="radio" name="res" value="3">
+                                        <span class="btns-group__item-inner">4K</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="tests">
+                            <div class="tests__list">
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <button class="test test--type_2" type="button" title="Удалить">
+                                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="tests__list-item">
+                                    <div class="test test--type_3" type="button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="js-tests-section" data-target="3" style="display:none"></div>
+                </div>
             </div>
         </div>
 
@@ -2108,9 +2654,5 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-
-</script>
 
 </html>

@@ -182,6 +182,12 @@ $(document).on('click', '.js-popup-opener', function () {
   $('.popup').hide();
   $('.' + popup).show();
   $('.popup-shade').fadeIn();
+
+  if(popup === 'js-popup-test') {
+    //обновление свайпера
+    testsSlider.update();
+    testsSlider2.update();
+  }
   return false;
 });
 
@@ -305,5 +311,50 @@ $(document).on('click', '.js-add-closer', function () {
 $(document).on('click', '.options__dropdown-button', function () {
   $(this).closest('.options__dropdown-list').find('.options__dropdown-button').removeClass('is-active');
   $(this).addClass('is-active');
+  return false;
+});
+
+const testsSlider = new Swiper('.js-tests-slider', {
+    loop: true,
+    navigation: {
+        nextEl: '.js-tests-next',
+        prevEl: '.js-tests-prev',
+    },
+    slidesPerView: 10,
+    spaceBetween: 12
+});
+
+const testsSlider2 = new Swiper('.js-tests-slider-2', {
+    loop: true,
+    navigation: {
+        nextEl: '.js-tests-next',
+        prevEl: '.js-tests-prev',
+    },
+    slidesPerView: 10,
+    spaceBetween: 12
+});
+
+//переключение тестов
+$(document).on('click', '.js-tests', function () {
+  $('.js-tests').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $('.js-tests-section').hide();
+  $('.js-tests-section[data-target="'+$(this).attr("data-target")+'"]').show();
+
+  testsSlider.update();
+  testsSlider2.update();
+  return false;
+});
+
+//откртие фильтра
+$(document).on('click', '.js-tests-filter-opener', function () {
+  $('.tests-filter').addClass('is-open');
+  return false;
+});
+
+//закрытие фильтра
+$(document).on('click', '.js-tests-filter-closer', function () {
+  $('.tests-filter').removeClass('is-open');
   return false;
 });

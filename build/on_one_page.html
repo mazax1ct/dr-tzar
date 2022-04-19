@@ -525,14 +525,8 @@
             </div>
         </div>
 
-        <div class="mods">
-            <button class="mods__reset" type="button" title="Сбросить">
-                <svg aria-hidden="true">
-                    <use xlink:href="#reset" />
-                </svg>
-                <span>Сбросить</span>
-            </button>
-            <p class="js-mods-toggler config__subtitle">
+        <div class="options">
+            <p class="js-options-toggler config__subtitle">
                 <span class="config__subtitle-num">3</span>
                 <span class="config__subtitle-container">
                     параметры конфигурации
@@ -543,211 +537,407 @@
                     </span>
                 </span>
             </p>
-            <div class="mods__inner mods__inner--type_1">
-                <button class="mods__reset" type="button" title="Сбросить">
+        
+            <div class="options__add-block">
+                <button class="js-add-opener options__add-opener" type="button">
                     <svg aria-hidden="true">
-                        <use xlink:href="#reset" />
+                        <use xlink:href="#gear" />
                     </svg>
-                    <span>Сбросить</span>
+                    Дополнительно
                 </button>
-                <div class="mods__container mods__container--type_2">
-                    <div class="mods__block">
-                        <p class="mods__block-title">
-                            <span class="info">
-                                <button class="info__button" type="button">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#info" />
-                                    </svg>
-                                </button>
-                                <span class="info__popover">
-                                    <span><span></span></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                    similique esse odit.
-                                </span>
-                            </span>
-                            Процессор
-                        </p>
-                        <div class="btns-group">
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="1">
-                                <span class="btns-group__item-inner">AMD</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="2">
-                                <span class="btns-group__item-inner">INTEL</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="cpu" value="3">
-                                <span class="btns-group__item-inner">Автовыбор</span>
-                            </label>
-                        </div>
+                <div class="options__add">
+                    <button class="js-add-closer options__add-closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#new_close" />
+                        </svg>
+                    </button>
+        
+                    <p class="options__add-title">Тип охлаждения</p>
+        
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="air" value="1">
+                            <span class="btns-group__item-inner">Водяное</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="air" value="2">
+                            <span class="btns-group__item-inner">Воздух</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="checkbox" name="air" value="3">
+                            <span class="btns-group__item-inner">Кастом</span>
+                        </label>
                     </div>
         
-                    <div class="mods__block">
-                        <p class="mods__block-title">
-                            <span class="info">
-                                <button class="info__button" type="button">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="#info" />
-                                    </svg>
-                                </button>
-                                <span class="info__popover">
-                                    <span><span></span></span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum repellat
-                                    similique esse odit.
-                                </span>
-                            </span>
-                            Видеокарта
-                        </p>
-                        <div class="btns-group">
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="1">
-                                <span class="btns-group__item-inner">AMD</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="2">
-                                <span class="btns-group__item-inner">NVIDIA</span>
-                            </label>
-                            <label class="btns-group__item">
-                                <input type="checkbox" name="gpu" value="3">
-                                <span class="btns-group__item-inner">Автовыбор</span>
-                            </label>
-                        </div>
+                    <div class="options__add-switches">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            Бесшумный
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            компактный<br> компьютер
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            60+ FPS
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            Подсветка
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            С разворотом<br> видеокарты
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__icon"></span>
+                            хит продаж
+                        </label>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="options__inner">
+                <ul class="options__cards-list">
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="1">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_1" />
+                            </svg>
+                            <span>На базе<br> процессора</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="2">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_2" />
+                            </svg>
+                            <span>На базе<br> видеокарты</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="3">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_3" />
+                            </svg>
+                            <span>На базе<br> корпуса</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button" data-target="4">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_4" />
+                            </svg>
+                            <span>Брендовые<br> серии</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_5" />
+                            </svg>
+                            <span>Новинки</span>
+                        </button>
+                    </li>
+                    <li class="options__cards-item">
+                        <button class="options__card" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_6" />
+                            </svg>
+                            <span>Акции</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="options__dropdown" data-target="1">
+                    <p class="options__dropdown-title">Выбери производителя</p>
+        
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce" value="1" checked>
+                            <span class="btns-group__item-inner">AMD</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce" value="2">
+                            <span class="btns-group__item-inner">INTEL</span>
+                        </label>
                     </div>
         
-                    <div class="mods__block mods__block--type_1">
-                        <div class="mods__switches">
-                            <label class="switch">
-                                <input class="js-series" type="checkbox">
-                                <span class="switch__icon"></span>
-                                Специальные<br> серии
-                            </label>
-                            <label class="switch">
-                                <input class="js-additional" type="checkbox">
-                                <span class="switch__icon"></span>
-                                <span>
-                                    <span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>
-                                    опции
-                                </span>
-                            </label>
-                        </div>
+                    <p class="options__dropdown-title">Выбери процессор</p>
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/cpu.png" srcset="images/content/cpu@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD RYZEN 5</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="options__dropdown" data-target="2">
+                    <p class="options__dropdown-title">Выбери производителя</p>
+        
+                    <div class="btns-group">
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce_2" value="1" checked>
+                            <span class="btns-group__item-inner">AMD</span>
+                        </label>
+                        <label class="btns-group__item">
+                            <input type="radio" name="produce_2" value="2">
+                            <span class="btns-group__item-inner">NVIDIA</span>
+                        </label>
                     </div>
         
-                    <div class="mods__block mods__brands">
-                        <p class="mods__brands-title">Бренды</p>
-                        <div class="brands">
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_1.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_2.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_3.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_4.jpg" alt="Название бренда">
-                                </label>
-                            </div>
-                            <div class="brands__item">
-                                <label class="brands__brand">
-                                    <input type="checkbox">
-                                    <img src="images/content/brand_5.jpg" alt="Название бренда">
-                                </label>
-                            </div>
+                    <p class="options__dropdown-title">Выбери видеокарту</p>
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/video.png" srcset="images/content/video@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">AMD Radeon 6600XT</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="options__dropdown" data-target="3">
+                    <p class="options__dropdown-title">Выбери корпус</p>
+                    <ul class="options__dropdown-list">
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                        <li class="options__dropdown-item">
+                            <button class="options__dropdown-button" type="button">
+                                <span class="options__dropdown-button-img"><img src="images/content/korpus.png" srcset="images/content/korpus@2x.png 2x" alt="alt"></span>
+                                <span class="options__dropdown-button-title">Progaming</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="options__dropdown" data-target="4">
+                    <p class="options__dropdown-title">Выбери бренд</p>
+                    <div class="brands">
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_1.jpg" alt="Название бренда">
+                            </label>
                         </div>
-                    </div>
-        
-                    <div class="mods__block mods__additionals">
-                        <p class="mods__brands-title"><span class="mobile">Доп. </span><span class="desktop">Дополнительные </span>опции</p>
-                        <div class="mods__additionals-inner">
-                            <div class="mods__additionals-block">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Бесшумный
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Подсветка
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Компактный<br> компьютер
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    С разворотом<br> выдеокарты
-                                </label>
-                            </div>
-                            <div class="mods__additionals-block">
-                                <p class="mods__block-title">
-                                    <span class="info">
-                                        <button class="info__button" type="button">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="#info" />
-                                            </svg>
-                                        </button>
-                                        <span class="info__popover">
-                                            <span><span></span></span>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorum inventore sit natus distinctio voluptas, nam adipisci totam sapiente. Placeat consequatur numquam omnis, obcaecati dicta laborum
-                                            repellat
-                                            similique esse odit.
-                                        </span>
-                                    </span>
-                                    <span><span class="desktop">Выбери </span>тип охлаждения</span>
-                                </p>
-                                <div class="btns-group">
-                                    <label class="btns-group__item">
-                                        <input type="checkbox" name="air" value="1">
-                                        <span class="btns-group__item-inner">Водяное</span>
-                                    </label>
-                                    <label class="btns-group__item">
-                                        <input type="checkbox" name="air" value="2">
-                                        <span class="btns-group__item-inner">Воздух</span>
-                                    </label>
-                                    <label class="btns-group__item">
-                                        <input type="checkbox" name="air" value="3">
-                                        <span class="btns-group__item-inner">Кастом</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mods__additionals-block">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Новинка
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Хит продаж
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    Акции
-                                </label>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="switch__icon"></span>
-                                    fps 60+
-                                </label>
-                            </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_2.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_3.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_4.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_5.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_1.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_2.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_3.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_4.jpg" alt="Название бренда">
+                            </label>
+                        </div>
+                        <div class="brands__item">
+                            <label class="brands__brand">
+                                <input type="checkbox">
+                                <img src="images/content/brand_5.jpg" alt="Название бренда">
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -2108,9 +2298,5 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-
-</script>
 
 </html>
