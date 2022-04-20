@@ -30,6 +30,80 @@
         }
     }
 
+    .btns-list {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        max-width: 1060px;
+        @media(min-width: $hd) {
+            padding: 0;
+        }
+
+        &::after,
+        &::before {
+            @media(min-width: $hd) {
+                display: none;
+            }
+        }
+    }
+
+    &--blue {
+        .games__slider-block {
+            box-shadow: 0 1px 8px 0 rgba(#5474B4, 0.5);
+            @media(min-width: $sm) {
+                box-shadow: 0 0 24px 0 rgba(#5474B4, 0.5);
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                @media(min-width: $sm) {
+                    box-shadow: 0 0 16px 0 rgba(#5474B4, 0.5);
+                }
+            }
+        }
+
+        .games__games-block {
+            box-shadow: 0 1px 8px 0 rgba(#5474B4, 0.5);
+            @media(min-width: $sm) {
+                box-shadow: 0 4px 9px 0 rgba(#5474B4, 0.5);
+            }
+        }
+
+        .games__game {
+            &:focus,
+            &:hover {
+                img {
+                    box-shadow: 0 0 4px 0 rgba(#5474B4, 0.8);
+                }
+            }
+
+            &.is-active {
+                img {
+                    box-shadow: 0 0 4px 0 #5474B4;
+                }
+            }
+
+            &::after {
+                border: 4px solid #5474B4;
+            }
+        }
+
+        .games__picked-game {
+            background-color: rgba(#5474B4, 0.5);
+            box-shadow: 0 0 12px 0 #5474B4;
+
+            &::after {
+                border: 2px solid rgba(#5474B4, 0.5);
+            }
+
+            &.is-picked {
+                &::after {
+                    border-color: #5474B4;
+                }
+            }
+        }
+    }
+
     &__filter-block {
         margin-bottom: 24px;
         position: relative;
@@ -320,6 +394,28 @@
             @media(min-width: $sm) {
                 border-radius: 4px;
             }
+        }
+    }
+
+    &__game-title {
+        color: #fff;
+        display: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 8px;
+        padding-left: 6px;
+        padding-right: 6px;
+        text-align: center;
+        @media(min-width: $hd) {
+            display: block;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+        }
+        @media(min-width: $ufhd) {
+            font-size: 24px;
+            margin-top: 16px;
         }
     }
 

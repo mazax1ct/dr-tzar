@@ -8,9 +8,11 @@
     <p class="popup__big-title">Тесты</p>
 
     <div class="tests-sections">
-        <button class="js-tests tests-sections__button is-active" type="button" data-target="1">Игры</button>
-        <button class="js-tests tests-sections__button" type="button" data-target="2">Синтетика</button>
-        <button class="js-tests tests-sections__button" type="button" data-target="3">Создание контента</button>
+        <div class="tests-sections__inner">
+            <button class="js-tests tests-sections__button is-active" type="button" data-target="1">Игры</button>
+            <button class="js-tests tests-sections__button" type="button" data-target="2">Синтетика</button>
+            <button class="js-tests tests-sections__button" type="button" data-target="3">Создание контента</button>
+        </div>
     </div>
 
     <div class="js-tests-section" data-target="1">
@@ -26,7 +28,7 @@
                 <div class="tests-filter">
                     <button class="js-tests-filter-closer tests-filter__close" type="button" title="Закрыть">
                         <svg aria-hidden="true">
-                            <use xlink:href="#close" />
+                            <use xlink:href="#new_close" />
                         </svg>
                     </button>
                     <div class="tests-filter__inner">
@@ -272,12 +274,12 @@
                     </div>
                 </div>
             </div>
-            <button class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+            <button id="tests_1_prev" class="js-tests-prev swiper-button-prev" type="button" title="Назад">
                 <svg aria-hidden="true">
                     <use xlink:href="#arrow_left" />
                 </svg>
             </button>
-            <button class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+            <button id="tests_1_next" class="js-tests-next swiper-button-next" type="button" title="Вперёд">
                 <svg aria-hidden="true">
                     <use xlink:href="#arrow_right" />
                 </svg>
@@ -288,7 +290,7 @@
 
         <div class="tests-sorter">
             <div class="tests-sorter__item">
-                <div class="btns-group">
+                <div class="btns-group btns-group--blue">
                     <label class="btns-group__item">
                         <input type="radio" name="res" value="1" checked>
                         <span class="btns-group__item-inner">1080P</span>
@@ -304,7 +306,7 @@
                 </div>
             </div>
             <div class="tests-sorter__item">
-                <div class="btns-group">
+                <div class="btns-group btns-group--blue">
                     <label class="btns-group__item">
                         <input type="radio" name="quality" value="1" checked>
                         <span class="btns-group__item-inner">Standart</span>
@@ -322,84 +324,97 @@
         </div>
 
         <div class="tests">
-            <div class="tests__list">
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <div class="test test--type_3" type="button"></div>
+            <div class="js-tests-slider-3 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test.jpg" srcset="images/content/test@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test test--type_3" type="button"></div>
+                    </div>
                 </div>
             </div>
+            <button id="tests_3_prev" class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+                <svg aria-hidden="true">
+                    <use xlink:href="#arrow_left" />
+                </svg>
+            </button>
+            <button id="tests_3_next" class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+                <svg aria-hidden="true">
+                    <use xlink:href="#arrow_right" />
+                </svg>
+            </button>
         </div>
+
     </div>
 
     <div class="js-tests-section" data-target="2" style="display:none">
@@ -538,12 +553,12 @@
                     </div>
                 </div>
             </div>
-            <button class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+            <button id="tests_2_prev" class="js-tests-prev swiper-button-prev" type="button" title="Назад">
                 <svg aria-hidden="true">
                     <use xlink:href="#arrow_left" />
                 </svg>
             </button>
-            <button class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+            <button id="tests_2_next" class="js-tests-next swiper-button-next" type="button" title="Вперёд">
                 <svg aria-hidden="true">
                     <use xlink:href="#arrow_right" />
                 </svg>
@@ -554,7 +569,7 @@
 
         <div class="tests-sorter">
             <div class="tests-sorter__item">
-                <div class="btns-group">
+                <div class="btns-group btns-group--blue">
                     <label class="btns-group__item">
                         <input type="radio" name="res" value="1" checked>
                         <span class="btns-group__item-inner">1080P</span>
@@ -572,83 +587,95 @@
         </div>
 
         <div class="tests">
-            <div class="tests__list">
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <button class="test test--type_2" type="button" title="Удалить">
-                        <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#delete"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tests__list-item">
-                    <div class="test test--type_3" type="button"></div>
+            <div class="js-tests-slider-4 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="test test--type_2" type="button" title="Удалить">
+                            <img src="images/content/test2.jpg" srcset="images/content/test2@2x.jpg 2x" alt="alt">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#delete"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test test--type_3" type="button"></div>
+                    </div>
                 </div>
             </div>
+            <button id="tests_4_prev" class="js-tests-prev swiper-button-prev" type="button" title="Назад">
+                <svg aria-hidden="true">
+                    <use xlink:href="#arrow_left" />
+                </svg>
+            </button>
+            <button id="tests_4_next" class="js-tests-next swiper-button-next" type="button" title="Вперёд">
+                <svg aria-hidden="true">
+                    <use xlink:href="#arrow_right" />
+                </svg>
+            </button>
         </div>
     </div>
 

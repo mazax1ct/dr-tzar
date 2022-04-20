@@ -109,6 +109,12 @@
         max-width: 616px;
     }
 
+    &--blue {
+        @media(min-width: $sm) {
+            box-shadow: 0 0 8px 0 rgba(#5793EA, 0.5);
+        }
+    }
+
     &__top {
         border-radius: 4px 4px 0 0;
         background: radial-gradient(45.41% 49.44% at 49.06% 52.82%, #3A3C59 0%, #0C1117 100%);
@@ -304,15 +310,11 @@
 
         svg {
             fill: #fff;
-            height: 32px;
-            width: 32px;
-            @media(min-width: $fhd) {
-                height: 40px;
-                width: 40px;
-            }
+            height: 24px;
+            width: 24px;
             @media(min-width: $ufhd) {
-                height: 48px;
-                width: 48px;
+                height: 32px;
+                width: 32px;
             }
         }
     }

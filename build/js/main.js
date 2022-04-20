@@ -187,6 +187,8 @@ $(document).on('click', '.js-popup-opener', function () {
     //обновление свайпера
     testsSlider.update();
     testsSlider2.update();
+    testsSlider3.update();
+    testsSlider4.update();
   }
   return false;
 });
@@ -317,21 +319,81 @@ $(document).on('click', '.options__dropdown-button', function () {
 const testsSlider = new Swiper('.js-tests-slider', {
     loop: true,
     navigation: {
-        nextEl: '.js-tests-next',
-        prevEl: '.js-tests-prev',
+        nextEl: '#tests_1_next',
+        prevEl: '#tests_1_prev',
     },
-    slidesPerView: 10,
-    spaceBetween: 12
+    slidesPerView: 5,
+    spaceBetween: 8,
+    breakpoints: {
+      768: {
+        slidesPerView: 7,
+        spaceBetween: 9
+      },
+      1200: {
+        slidesPerView: 10,
+        spaceBetween: 12,
+      }
+    }
 });
 
 const testsSlider2 = new Swiper('.js-tests-slider-2', {
     loop: true,
     navigation: {
-        nextEl: '.js-tests-next',
-        prevEl: '.js-tests-prev',
+      nextEl: '#tests_2_next',
+      prevEl: '#tests_2_prev',
     },
-    slidesPerView: 10,
-    spaceBetween: 12
+    slidesPerView: 5,
+    spaceBetween: 8,
+    breakpoints: {
+      768: {
+        slidesPerView: 7,
+        spaceBetween: 12
+      },
+      1200: {
+        slidesPerView: 10,
+        spaceBetween: 12,
+      }
+    }
+});
+
+const testsSlider3 = new Swiper('.js-tests-slider-3', {
+    loop: false,
+    navigation: {
+      nextEl: '#tests_3_next',
+      prevEl: '#tests_3_prev',
+    },
+    slidesPerView: 5,
+    spaceBetween: 8,
+    breakpoints: {
+      768: {
+        slidesPerView: 7,
+        spaceBetween: 9
+      },
+      1200: {
+        slidesPerView: 10,
+        spaceBetween: 12,
+      }
+    }
+});
+
+const testsSlider4 = new Swiper('.js-tests-slider-4', {
+    loop: false,
+    navigation: {
+      nextEl: '#tests_4_next',
+      prevEl: '#tests_4_prev',
+    },
+    slidesPerView: 5,
+    spaceBetween: 8,
+    breakpoints: {
+      768: {
+        slidesPerView: 7,
+        spaceBetween: 9
+      },
+      1200: {
+        slidesPerView: 10,
+        spaceBetween: 12,
+      }
+    }
 });
 
 //переключение тестов
@@ -344,6 +406,8 @@ $(document).on('click', '.js-tests', function () {
 
   testsSlider.update();
   testsSlider2.update();
+  testsSlider3.update();
+  testsSlider4.update();
   return false;
 });
 
