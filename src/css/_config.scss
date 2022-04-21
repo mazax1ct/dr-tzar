@@ -18,8 +18,201 @@
     }
 
     &--blue {
-        @media(min-width: $fhd) {
+        @media(min-width: $hd) {
             background: linear-gradient(127.85deg, rgba(0, 0, 0, 0) 1.04%, rgba(84, 116, 180, 0.5) 100%), #020405;
+        }
+
+        .config__title {
+            &::before {
+                background-color: #5474B4;
+                box-shadow: 0 2px 4px 0 rgba(#5474B4, 0.5);
+            }
+        }
+
+        .config__selection {
+            .btns-group {
+                background-color: rgba(#5474B4, 0.5);
+
+                .btns-group__item-inner {
+                    border-color: #5474B4;
+                }
+
+                .btns-group__item input:checked + .btns-group__item-inner {
+                    background-color: #5474B4;
+                }
+            }
+        }
+
+        .btns-list__btn {
+            background-color: rgba(#5474B4, 0.2);
+
+            &:hover {
+                background-color: rgba(#5474B4, 0.5);
+            }
+
+            &.is-active {
+                background-color: #5474B4;
+            }
+        }
+
+        .games {
+            .games__slider-block {
+                box-shadow: 0 1px 8px 0 rgba(#5474B4, 0.5);
+                @media(min-width: $sm) {
+                    box-shadow: 0 0 24px 0 rgba(#5474B4, 0.5);
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    @media(min-width: $sm) {
+                        box-shadow: 0 0 16px 0 rgba(#5474B4, 0.5);
+                    }
+                }
+            }
+
+            .games__games-block {
+                box-shadow: 0 1px 8px 0 rgba(#5474B4, 0.5);
+                @media(min-width: $sm) {
+                    box-shadow: 0 4px 9px 0 rgba(#5474B4, 0.5);
+                }
+            }
+
+            .games__game {
+                &:focus,
+                &:hover {
+                    img {
+                        box-shadow: 0 0 4px 0 rgba(#5474B4, 0.8);
+                    }
+                }
+
+                &.is-active {
+                    img {
+                        box-shadow: 0 0 4px 0 #5474B4;
+                    }
+                }
+
+                &::after {
+                    border: 4px solid #5474B4;
+                }
+            }
+
+            .games__picked-game {
+                background-color: rgba(#5474B4, 0.5);
+                box-shadow: 0 0 12px 0 #5474B4;
+
+                &::after {
+                    border: 2px solid rgba(#5474B4, 0.5);
+                }
+
+                &.is-picked {
+                    &::after {
+                        border-color: #5474B4;
+                    }
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 0 8px 0 rgba(#5793EA, 0.5);
+        }
+
+        .options {
+            box-shadow: 0 0 10px 0 rgba(#5474B4, 0.5);
+
+            .options__inner {
+                @media(min-width: $sm) {
+                    box-shadow: 0 0 24px 0 rgba(#5474B4, 0.5);
+                }
+                @media(min-width: $hd) {
+                    box-shadow: 0 0 12px 0 #5474B4;
+                }
+            }
+
+            .options__card {
+                box-shadow: 0 2px 8px 0 rgba(#5474B4, 0.5);
+                @media(min-width: $hd) {
+                    box-shadow: 0 2px 8px 0 #5474B4;
+                }
+
+                &.is-active {
+                    border-color: #5474B4;
+                }
+            }
+
+            .options__dropdown > .btns-group {
+                background-color: rgba(#5474B4, 0.5);
+                @media(min-width: $hd) {
+                    background-color: #0C1117;
+                    box-shadow: 0 2px 8px 0 rgba(#5474B4, 0.5);
+                }
+
+                .btns-group__item-inner {
+                    background-color: rgba(#5474B4, 0.5);
+                    border-color: #5474B4;
+                }
+
+                .btns-group__item input:checked + .btns-group__item-inner {
+                    background-color: #5474B4;
+                }
+            }
+
+            .options__dropdown-button {
+                box-shadow: 0 2px 8px 0 rgba(#5474B4, 0.5);
+
+                &.is-active {
+                    border-color: #5474B4;
+                }
+            }
+
+            .options__add-opener {
+                &:focus,
+                &:hover {
+                    background-color: #5474B4;
+                }
+            }
+
+            .options__add {
+                box-shadow: 0 0 20px 0 rgba(#5474B4, 0.5);
+
+                .btns-group {
+                    background-color: rgba(#5474B4, 0.5);
+
+                    .btns-group__item-inner {
+                        border-color: #5474B4;
+                    }
+
+                    .btns-group__item input:checked + .btns-group__item-inner {
+                        background-color: #5474B4;
+                    }
+                }
+            }
+
+            .options__dropdown-title--bordered {
+                &::after {
+                    background-color: #5474B4;
+                }
+            }
+        }
+
+        .ff-list {
+            .ff-list__button {
+                &:focus,
+                &:hover {
+                    color: #5474B4;
+
+                    svg {
+                        fill: #5474B4;
+                    }
+                }
+
+                &.is-active {
+                    color: #3B81EA;
+
+                    svg {
+                        fill: #3B81EA;
+                    }
+                }
+            }
         }
     }
 
@@ -159,13 +352,12 @@
                 width: 354px;
             }
         }
-
-        &--blue {
+        /*&--blue {
             &::before {
                 background-color: #5474B4;
                 box-shadow: 0 2px 4px 0 rgba(#5474B4, 0.5);
             }
-        }
+        }*/
     }
 
     &__subtitle {
