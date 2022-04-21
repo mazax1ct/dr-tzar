@@ -619,7 +619,7 @@
             max-width: 396px;
         }
         @media(min-width: $hd) {
-            max-width: 980px;
+            max-width: 960px;
         }
 
         .options__add-block {
@@ -630,9 +630,6 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
-            @media(min-width: $ufhd) {
-                top: -10px;
-            }
         }
 
         .options__add {
