@@ -8,12 +8,12 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    @media(min-width: $fhd) {
+    @media(min-width: $hd) {
+        background-image: linear-gradient(127.85deg, rgba(0, 0, 0, 0) 1.04%, rgba(97, 27, 26, 0.227982) 52.35%);
         padding-top: 80px;
         padding-bottom: 72px;
     }
     @media(min-width: $fhd) {
-        background-image: linear-gradient(127.85deg, rgba(0, 0, 0, 0) 1.04%, rgba(97, 27, 26, 0.227982) 52.35%);
         padding-bottom: 178px;
     }
 
@@ -213,6 +213,14 @@
                     }
                 }
             }
+        }
+
+        .options__dropdown-block {
+            box-shadow: 0 0 8px 0 #3B81EA;
+        }
+
+        .feedback__form-outer {
+            box-shadow: 0 0 8px 0 #3B81EA;
         }
     }
 

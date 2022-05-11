@@ -49,8 +49,8 @@
                     <span class="config__subtitle-container">Аппаратная платформа</span>
                 </p>
 
-                <ul class="options__cards-list">
-                    <li class="options__cards-item options__cards-item--type_1">
+                <ul class="options__cards-list options__cards-list--type_1">
+                    <li class="options__cards-item options__cards-item--type_2">
                         <button class="options__card" type="button" data-target="1">
                             <svg aria-hidden="true">
                                 <use xlink:href="#opt_1" />
@@ -58,7 +58,7 @@
                             <span>Процессорная<br> платформа</span>
                         </button>
                     </li>
-                    <li class="options__cards-item options__cards-item--type_1">
+                    <li class="options__cards-item options__cards-item--type_2">
                         <button class="options__card" type="button" data-target="2">
                             <svg aria-hidden="true">
                                 <use xlink:href="#opt_2" />
@@ -66,7 +66,7 @@
                             <span>Multi GPU</span>
                         </button>
                     </li>
-                    <li class="options__cards-item options__cards-item--type_1">
+                    <li class="options__cards-item options__cards-item--type_2">
                         <button class="options__card" type="button" data-target="3">
                             <svg aria-hidden="true">
                                 <use xlink:href="#opt_3" />
@@ -74,10 +74,19 @@
                             <span>Форм фактор</span>
                         </button>
                     </li>
+                    <!--TODO-->
+                    <li class="options__cards-item options__cards-item--type_2">
+                        <button class="options__card" type="button" data-target="4">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#opt_7" />
+                            </svg>
+                            <span>Дополнительно</span>
+                        </button>
+                    </li>
+                    <!--TODO-->
                 </ul>
 
                 <div class="options__dropdown" data-target="1">
-
                     <p class="options__dropdown-title">Выбери количество</p>
 
                     <div class="btns-group">
@@ -125,7 +134,8 @@
 
                                 <p class="options__add-title-big">Дополнительно</p>
 
-                                <p class="options__add-title">Тип охлаждения</p>
+                                <!--TODO-->
+                                <!--<p class="options__add-title">Тип охлаждения</p>
 
                                 <div class="btns-group">
                                     <label class="btns-group__item">
@@ -140,25 +150,21 @@
                                         <input type="checkbox" name="air" value="3">
                                         <span class="btns-group__item-inner">Кастом</span>
                                     </label>
-                                </div>
+                                </div>-->
 
                                 <div class="options__add-switches options__add-switches--type_1">
                                     <label class="switch">
                                         <input type="checkbox">
                                         <span class="switch__icon"></span>
-                                        Бесшумный
+                                        Высокая частота
                                     </label>
                                     <label class="switch">
                                         <input type="checkbox">
                                         <span class="switch__icon"></span>
-                                        хит продаж
-                                    </label>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="switch__icon"></span>
-                                        Новинки
+                                        Много ядер
                                     </label>
                                 </div>
+                                <!--TODO-->
                             </div>
                         </div>
                     </div>
@@ -243,7 +249,8 @@
 
                     <div class="options__dropdown-title-block">
                         <p class="options__dropdown-title">Выбери видеокарту</p>
-                        <div class="options__add-block">
+                        <!--TODO-->
+                        <!--<div class="options__add-block">
                             <button class="js-add-opener options__add-opener options__add-opener--transparent" type="button" title="Дополнительно">
                                 <svg aria-hidden="true">
                                     <use xlink:href="#gear" />
@@ -271,7 +278,8 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
+                        <!--TODO-->
                     </div>
 
                     <ul class="options__dropdown-list">
@@ -339,10 +347,10 @@
                 </div>
 
                 <div class="options__dropdown" data-target="3">
-
                     <div class="options__dropdown-title-block">
                         <p class="options__dropdown-title options__dropdown-title--bordered">Выбери формфактор</p>
-                        <div class="options__add-block">
+                        <!--TODO-->
+                        <!--<div class="options__add-block">
                             <button class="js-add-opener options__add-opener options__add-opener--transparent" type="button" title="Дополнительно">
                                 <svg aria-hidden="true">
                                     <use xlink:href="#gear" />
@@ -375,7 +383,8 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
+                        <!--TODO-->
                     </div>
 
                     <div class="ff-list">
@@ -476,6 +485,45 @@
                         </li>
                     </ul>-->
                 </div>
+
+                <!--TODO-->
+                <div class="options__dropdown" data-target="4">
+                    <div class="options__dropdown-block options__dropdown-block--type_1">
+                        <div class="options__add-switches">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                Много памяти
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                MultyGPU
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                Бесшумный
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                Виртуализация
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                NVENC
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="switch__icon"></span>
+                                Водяное охл.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--TODO-->
             </div>
         </div>
 
@@ -978,6 +1026,10 @@
                 </div>
             </div>
         </div>
+
+        <!--TODO-->
+        //= template/feedback.html
+        <!--TODO-->
 
         <div class="popup-shade">
             <div class="popup-shade__inner">
