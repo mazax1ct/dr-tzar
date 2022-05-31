@@ -740,11 +740,8 @@
         color: #fff;
         display: flex;
         flex-direction: column;
-        font-size: 12px;
-        font-weight: 700;
         height: 100%;
-        justify-content: flex-start;
-        line-height: 1.33333;
+        justify-content: center;
         min-height: 146px;
         padding: 12px 6px 6px;
         text-align: center;
@@ -762,6 +759,10 @@
     }
 
     &__dropdown-button-img {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 31px;
         max-width: 96px;
         @media(min-width: $hd) {
             max-width: 132px;
@@ -770,7 +771,31 @@
 
     &__dropdown-button-title {
         display: block;
+        font-size: 12px;
+        line-height: 1.33333;
         margin-top: 6px;
+        @media(min-width: $hd) {
+            font-size: 18px;
+        }
+        @media(min-width: $fhd) {
+            margin-top: 12px;
+        }
+        @media(min-width: $ufhd) {
+            font-weight: 700;
+            margin-top: 20px;
+        }
+    }
+
+    &__dropdown-button-text {
+        font-size: 12px;
+        line-height: 1.33333;
+        margin-top: 6px;
+        @media(min-width: $fhd) {
+            margin-top: 12px;
+        }
+        @media(min-width: $ufhd) {
+            font-weight: 700;
+        }
     }
 
     &__dropdown-block {
