@@ -95,7 +95,7 @@
 }
 
 .tests-filter-block {
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;
     position: relative;
     text-align: center;
     @media(min-width: $hd) {
@@ -105,7 +105,7 @@
         position: absolute;
         right: 0;
         top: auto;
-    }
+    }*/
 }
 
 .tests-filter-opener {
@@ -115,18 +115,21 @@
     border: 2px solid #5474B4;
     color: #fff;
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
     font-size: 12px;
     font-weight: 700;
     justify-content: center;
     line-height: 1.33333;
     letter-spacing: 0.1px;
     min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
     transition: background-color 0.3s;
     @media(min-width: $hd) {
         font-size: 16px;
+        min-height: 48px;
     }
 
     &.is-active,
@@ -622,5 +625,172 @@
         color: rgba(255,255,255,.2);
         border-color: rgba(255,255,255,.2);
         background-color: rgba(255,255,255,.1);
+    }
+}
+
+.tests-search-block {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    max-width: 910px;
+    position: relative;
+    z-index: 2;
+    @media(min-width: $hd) {
+        display: flex;
+    }
+}
+
+.tests-search {
+    margin-bottom: 24px;
+    position: relative;
+    @media(min-width: $hd) {
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+        @media(min-width: $hd) {
+            margin-right: 24px;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__input {
+        background-color: rgba(#5474B4, 0.3);
+        border: 2px solid #5474B4;
+        border-radius: 4px;
+        color: #fff;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        height: 40px;
+        padding: 0 58px 0 12px;
+        transition: background-color 0.3s;
+        width: 100%;
+        @media(min-width: $hd) {
+            height: 48px;
+            padding-right: 60px;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+
+        &::-moz-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+
+        &:focus {
+            background-color: transparent;
+
+            &::-webkit-input-placeholder {
+                opacity: 0;
+            }
+
+            &::-moz-placeholder {
+                opacity: 0;
+            }
+
+            &:-ms-input-placeholder {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__submit {
+        align-items: center;
+        background-color: #5474B4;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        left: auto;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        @media(min-width: $hd) {
+            height: 48px;
+            width: 48px;
+        }
+
+        svg {
+            fill: #fff;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    &__dropdown {
+        backdrop-filter: blur(40px);
+        background-color: rgba(#0C1117, 0.7);
+        border: 2px solid #5474B4;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        display: none;
+        left: 8px;
+        position: absolute;
+        padding: 12px 16px 16px;
+        right: 8px;
+        z-index: 1;
+
+        .swiper-slide {
+            width: 48px;
+            @media(min-width: $hd) {
+                width: 90px;
+            }
+        }
+    }
+
+    &__dropdown-title {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        span {
+            color: #D43C38;
+        }
+    }
+
+    &__list {
+        display: flex;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__list-item {
+        margin-right: 8px;
+        min-width: 48px;
+        @media(min-width: 768px) {
+            min-width: 88px;
+        }
+        @media(min-width: $hd) {
+            margin-right: 12px;
+            min-width: 90px;
+        }
     }
 }

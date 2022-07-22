@@ -29,7 +29,10 @@
     max-height: 96%;
     min-height: 408px;
     margin: auto;
+    overflow-y: auto;
     position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($main_color, 0.5) rgba($main_color, 0.2);
     width: 100%;
     @media(min-width: $sm) {
         min-height: 608px;

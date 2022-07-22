@@ -422,3 +422,20 @@ $(document).on('click', '.js-tests-filter-closer', function () {
   $('.tests-filter').removeClass('is-open');
   return false;
 });
+
+const testsSlider5 = new Swiper('.js-tests-slider-5', {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    breakpoints: {
+      1200: {
+        spaceBetween: 12
+      }
+    }
+});
+
+//автосаггест
+$(document).on('focus', '.tests-search__input', function () {
+  $(this).closest('.tests-search').find('.tests-search__dropdown').show();
+  testsSlider5.update();
+});
