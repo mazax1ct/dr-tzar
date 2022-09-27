@@ -156,7 +156,6 @@ $(document).on('change', '.js-card-switch', function () {
   var container = $(this).closest('.card');
   var parent = $(this).closest('.card__switch-block');
 
-
   container.find('.card__slider.is-active').removeClass('visible');
   parent.find('.card__switch-radios.is-active').removeClass('animated'); //анимация движения
   setTimeout(function() {
@@ -249,6 +248,22 @@ $(document).ready(function () {
       }
     });
   }
+
+  //кастомный селект
+  $('.js-select').each(function() {
+   var $p = $(this).closest('.select-wrapper');
+   $(this).select2({
+		 minimumResultsForSearch: Infinity,
+     dropdownPosition: 'below',
+     dropdownParent: $p
+   });
+	}).on("select2:open", function (e) {
+		var $p = $(this).closest('.select-wrapper');
+		$p.addClass('open');
+	}).on("select2:close", function (e) {
+		var $p = $(this).closest('.select-wrapper');
+		$p.removeClass('open');
+	});
 });
 
 $(document).on('click', '.js-price-reset', function () {

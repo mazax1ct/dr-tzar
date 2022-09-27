@@ -606,33 +606,61 @@
         z-index: 1;
 
         .btn {
-            min-width: 114px;
+            font-size: 11px;
+            min-width: 105px;
+            padding-left: 8px;
+            padding-right: 8px;
             @media(min-width: $sm) {
                 box-shadow: 0 4px 4px 0 rgba(#000, 0.25);
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 800;
                 min-width: 164px;
                 min-height: 40px;
                 padding-top: 6px;
                 padding-bottom: 6px;
             }
+            @media(min-width: $hd) {
+                font-size: 16px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 8px;
+                @media(min-width: $sm) {
+                    margin-right: 16px;
+                }
+                @media(min-width: $fhd) {
+                    margin-right: 24px;
+                }
+            }
         }
     }
 
     &__price-block {
-        margin-right: 24px;
+        &:not(:last-child) {
+            margin-right: 8px;
+            @media(min-width: $sm) {
+                margin-right: 16px;
+            }
+            @media(min-width: $fhd) {
+                margin-right: 24px;
+            }
+        }
     }
 
     &__price {
         color: #fff;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 900;
         line-height: 1.33333;
         letter-spacing: 0.5px;
         margin: 0;
+        white-space: nowrap;
         @media(min-width: $sm) {
-            font-size: 32px;
+            font-size: 24px;
             line-height: 1.25;
+        }
+        @media(min-width: $fhd) {
+            font-size: 32px;
         }
     }
 
@@ -779,8 +807,8 @@
         justify-content: center;
 
         .btn {
-            margin-left: 12px;
-            margin-right: 12px;
+            margin-left: 8px;
+            margin-right: 8px;
             @media(min-width: $sm) {
                 min-height: 48px;
                 padding-left: 20px;

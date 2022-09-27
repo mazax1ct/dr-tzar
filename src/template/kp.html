@@ -1,0 +1,66 @@
+<div class="js-popup-kp popup">
+    <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+        <svg aria-hidden="true">
+            <use xlink:href="#new_close" />
+        </svg>
+    </button>
+
+    <div class="popup__inner popup__inner--type_1">
+        <p class="popup__title">Запросить КП</p>
+
+        <form class="popup__form">
+            <div class="popup__form-row">
+                <label class="popup__label">
+                    <span class="popup__label-text">Название компании*</span>
+                    <input class="popup__input" type="text" placeholder="">
+                </label>
+            </div>
+            <div class="popup__form-row">
+                <label class="popup__label">
+                    <span class="popup__label-text">ИНН*</span>
+                    <input class="popup__input" type="text" placeholder="">
+                </label>
+            </div>
+            <div class="popup__form-row">
+                <label class="popup__label">
+                    <span class="popup__label-text">ФИО Контактного лица*</span>
+                    <input class="popup__input" type="text" placeholder="">
+                </label>
+            </div>
+            <div class="popup__form-row">
+                <label class="popup__label">
+                    <span class="popup__label-text">Телефон*</span>
+                    <input class="popup__input error" type="text" placeholder="+7-_ _ _ -_ _ _ -_ _-_ _">
+                </label>
+            </div>
+            <div class="popup__form-row">
+                <label class="popup__label">
+                    <span class="popup__label-text">Email*</span>
+                    <input class="popup__input" type="text" placeholder="">
+                </label>
+            </div>
+            <div class="popup__form-row">
+                <label class="popup__label popup__label--select">
+                    <span class="popup__label-text">Тип закупки</span>
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Выберите тип закупки">
+                            <option></option>
+                            <option value="1">Прямая закупка</option>
+                            <option value="2">Тендер</option>
+                            <option value="3">Аукцион</option>
+                            <option value="4">Конкурс</option>
+                            <option value="5">Другое</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+
+            <div class="popup__form-row">
+                <img src="images/content/captcha.jpg" alt="">
+            </div>
+            <div class="popup__form-button">
+                <button class="js-open-inner btn" type="submit" data-inner="success">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
