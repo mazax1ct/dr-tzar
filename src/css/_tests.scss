@@ -198,13 +198,14 @@
         max-height: initial;
         overflow: visible;
         position: absolute;
-        right: -2px;
+        right: -52px;
         top: -2px;
         transform: none;
         padding-bottom: 32px;
         width: 942px;
     }
     @media(min-width: $fhd) {
+        right: -2px;
         width: 990px;
     }
 
