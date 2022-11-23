@@ -13,6 +13,10 @@
     }
     @media(min-width: $hd) {
         max-width: 1040px;
+        margin-bottom: 12px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 24px;
     }
 
     &__inner {
@@ -90,7 +94,11 @@
     margin-bottom: 16px;
     text-align: center;
     @media(min-width: $hd) {
+        margin-bottom: 12px;
+    }
+    @media(min-width: $fhd) {
         font-size: 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -128,6 +136,10 @@
     padding-right: 24px;
     transition: background-color 0.3s;
     @media(min-width: $hd) {
+        font-size: 12px;
+        min-height: 32px;
+    }
+    @media(min-width: $fhd) {
         font-size: 16px;
         min-height: 48px;
     }
@@ -383,6 +395,9 @@
         padding-bottom: 16px;
     }
     @media(min-width: $hd) {
+        padding: 12px 42px;
+    }
+    @media(min-width: $fhd) {
         padding: 20px 42px;
     }
 
@@ -474,12 +489,26 @@
     }
     @media(min-width: $hd) {
         min-width: 90px;
+        min-height: 110px;
+    }
+    @media(min-width: $fhd) {
+        min-width: 90px;
         min-height: 124px;
     }
 
     img {
         border-radius: 4px;
         display: block;
+        @media(min-width: $hd) {
+            object-fit: cover;
+            object-position: center;
+            width: 90px;
+            height: 110px;
+        }
+        @media(min-width: $fhd) {
+            width: 90px;
+            height: 124px;
+        }
     }
 
     svg {
@@ -637,6 +666,10 @@
     z-index: 2;
     @media(min-width: $hd) {
         display: flex;
+        margin-bottom: 16px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 24px;
     }
 }
 
@@ -671,6 +704,10 @@
         transition: background-color 0.3s;
         width: 100%;
         @media(min-width: $hd) {
+            height: 32px;
+            padding-right: 40px;
+        }
+        @media(min-width: $fhd) {
             height: 48px;
             padding-right: 60px;
         }
@@ -723,6 +760,10 @@
         top: 0;
         width: 40px;
         @media(min-width: $hd) {
+            height: 32px;
+            width: 32px;
+        }
+        @media(min-width: $fhd) {
             height: 48px;
             width: 48px;
         }
@@ -731,6 +772,14 @@
             fill: #fff;
             height: 32px;
             width: 32px;
+            @media(min-width: $hd) {
+                height: 24px;
+                width: 24px;
+            }
+            @media(min-width: $fhd) {
+                height: 32px;
+                width: 32px;
+            }
         }
     }
 
@@ -749,7 +798,7 @@
 
         .swiper-slide {
             width: 48px;
-            @media(min-width: $hd) {
+            @media(min-width: $sm) {
                 width: 90px;
             }
         }

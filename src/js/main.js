@@ -345,8 +345,12 @@ const testsSlider = new Swiper('.js-tests-slider', {
         spaceBetween: 9
       },
       1200: {
+        slidesPerView: 8,
+        spaceBetween: 4
+      },
+      1900: {
         slidesPerView: 10,
-        spaceBetween: 12,
+        spaceBetween: 12
       }
     }
 });
@@ -365,8 +369,12 @@ const testsSlider2 = new Swiper('.js-tests-slider-2', {
         spaceBetween: 12
       },
       1200: {
+        slidesPerView: 8,
+        spaceBetween: 4
+      },
+      1900: {
         slidesPerView: 10,
-        spaceBetween: 12,
+        spaceBetween: 12
       }
     }
 });
@@ -385,8 +393,12 @@ const testsSlider3 = new Swiper('.js-tests-slider-3', {
         spaceBetween: 9
       },
       1200: {
+        slidesPerView: 8,
+        spaceBetween: 4
+      },
+      1900: {
         slidesPerView: 10,
-        spaceBetween: 12,
+        spaceBetween: 12
       }
     }
 });
@@ -405,8 +417,12 @@ const testsSlider4 = new Swiper('.js-tests-slider-4', {
         spaceBetween: 9
       },
       1200: {
+        slidesPerView: 8,
+        spaceBetween: 4
+      },
+      1900: {
         slidesPerView: 10,
-        spaceBetween: 12,
+        spaceBetween: 12
       }
     }
 });
